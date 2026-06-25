@@ -112,6 +112,46 @@ _KEYWORD_MAP: list[tuple[str, str]] = [
 
 
 
+# ── 50 / 30 / 20 Budget Classification ────────────────────────────────────
+# Maps each spending category to one of the three budget buckets used in the
+# popular "50/30/20" budgeting rule:
+#   Needs (50%)  — essential living costs
+#   Wants (30%)  — discretionary / lifestyle spending
+#   Savings (20%) — savings, investments, debt repayment
+#
+# "Incoming Salary" is income, not spending, so it is excluded from the
+# classification but is used as the denominator when calculating ratios.
+BUDGET_CLASSIFICATION: dict[str, str] = {
+    "Groceries": "Needs",
+    "Rent": "Needs",
+    "Tax": "Needs",
+    "Travel": "Needs",
+    "Subscriptions": "Wants",
+    "Others": "Wants",
+    "Interest": "Savings",
+    "Incoming Salary": "Income",
+}
+
+BUDGET_TARGETS: dict[str, float] = {
+    "Needs": 50.0,
+    "Wants": 30.0,
+    "Savings": 20.0,
+}
+
+
+def classify_budget(category: str) -> str:
+    """Map a spending *category* to a budget bucket (Needs / Wants / Savings).
+
+    >>> classify_budget("Groceries")
+    'Needs'
+    >>> classify_budget("Subscriptions")
+    'Wants'
+    >>> classify_budget("Interest")
+    'Savings'
+    """
+    return BUDGET_CLASSIFICATION.get(category, "Wants")
+
+
 def categorise(description: str) -> str:
     """Return the spending category for a transaction *description*.
 

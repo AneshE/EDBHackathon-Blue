@@ -18,7 +18,9 @@ spending_analyst_agent = Agent(
         "from BigQuery, categorising them (Groceries, Subscriptions, Travel, "
         "Rent, Tax, Interest, Incoming Salary, Others), and presenting "
         "breakdowns across weekly, monthly, quarterly, half-yearly, and "
-        "annual intervals. Detects overspending and duplicate subscriptions."
+        "annual intervals. Classifies spending into Needs, Wants, and "
+        "Savings/Investments to compare against the 50/30/20 golden rule "
+        "of budgeting. Detects overspending and duplicate subscriptions."
     ),
     instruction=SPENDING_ANALYST_INSTRUCTION,
     tools=[get_transactions, analyse_spending],

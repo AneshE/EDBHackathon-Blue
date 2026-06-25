@@ -13,7 +13,7 @@ from google.cloud import bigquery
 
 from ..observability.tool_tracer import traced_tool
 from .bigquery_client import bq_client
-from .category_mapper import categorise
+from .category_mapper import categorise, classify_budget, BUDGET_TARGETS
 
 load_dotenv()
 
@@ -131,8 +131,10 @@ def analyse_spending(customer_id: str, interval: str = "monthly") -> str:
 
             for cat, row in category_totals.iterrows():
                 pct = (row["sum"] / total_spent * 100) if total_spent else 0
+                amt_str = f"£{row['sum']:,.2f}"
+                pct_str = f"{pct:.1f}%"
                 lines.append(
-                    f"{cat:<20} £{row['sum']:>10,.2f} {int(row['count']):>7} {pct:>10.1f}%"
+                    f"{cat:<20} {amt_str:>12} {int(row['count']):>7} {pct_str:>11}"
                 )
 
             # ── Flag potential overspending ──
@@ -165,6 +167,83 @@ def analyse_spending(customer_id: str, interval: str = "monthly") -> str:
                     )
         else:
             lines.append("No credit (income) transactions found in this period.")
+
+        # ── 50 / 30 / 20 Budget Ratio Analysis ──
+        if not debits.empty and not credits.empty:
+            total_income = credits["amount"].sum()
+            total_spent_val = debits["abs_amount"].sum()
+
+            # Classify each category into budget buckets
+            debits["budget_bucket"] = debits["category"].apply(classify_budget)
+            bucket_totals: dict[str, float] = {}
+            for bucket in ("Needs", "Wants", "Savings"):
+                bucket_df = debits[debits["budget_bucket"] == bucket]
+                bucket_totals[bucket] = bucket_df["abs_amount"].sum() if not bucket_df.empty else 0.0
+
+            lines.append("")
+            lines.append("═══ 50 / 30 / 20 Budget Ratio Analysis ═══")
+            lines.append("")
+            lines.append(
+                f"Using total income (£{total_income:,.2f}) as the baseline "
+                f"for the golden-rule comparison."
+            )
+            lines.append("")
+            lines.append(f"{'Bucket':<15} {'Actual £':>12} {'Actual %':>10} {'Target %':>10}   {'Status':<12}")
+            lines.append("─" * 63)
+
+            for bucket in ("Needs", "Wants", "Savings"):
+                amount = bucket_totals[bucket]
+                actual_pct = (amount / total_income * 100) if total_income else 0
+                target_pct = BUDGET_TARGETS[bucket]
+                diff = actual_pct - target_pct
+
+                if bucket == "Savings":
+                    if abs(diff) <= 5:
+                        status = "✅ On track"
+                    elif diff < -5:
+                        status = "⚠️  Under"
+                    else:
+                        status = "🟢 Above"
+                else:
+                    if abs(diff) <= 5:
+                        status = "✅ On track"
+                    elif diff > 5:
+                        status = "⚠️  Over"
+                    else:
+                        status = "🟢 Under"
+
+                amount_str = f"£{amount:,.2f}"
+                actual_pct_str = f"{actual_pct:.1f}%"
+                target_pct_str = f"{target_pct:.1f}%"
+                lines.append(
+                    f"{bucket:<15} {amount_str:>12} {actual_pct_str:>10} {target_pct_str:>10}   {status:<12}"
+                )
+
+            lines.append("")
+            # Provide a summary verdict
+            needs_pct = (bucket_totals['Needs'] / total_income * 100) if total_income else 0
+            wants_pct = (bucket_totals['Wants'] / total_income * 100) if total_income else 0
+            savings_pct = (bucket_totals['Savings'] / total_income * 100) if total_income else 0
+
+            if needs_pct > 55:
+                lines.append(
+                    f"⚠️  INSIGHT: Your essential spending (Needs) is at {needs_pct:.1f}%, "
+                    f"exceeding the recommended 50%. Consider reviewing fixed costs like rent or travel."
+                )
+            if wants_pct > 35:
+                lines.append(
+                    f"⚠️  INSIGHT: Your discretionary spending (Wants) is at {wants_pct:.1f}%, "
+                    f"above the recommended 30%. Subscriptions and lifestyle spending may need trimming."
+                )
+            if savings_pct < 15:
+                lines.append(
+                    f"⚠️  INSIGHT: Your savings/investments allocation is only {savings_pct:.1f}%, "
+                    f"below the recommended 20%. Try to increase savings contributions."
+                )
+            if needs_pct <= 55 and wants_pct <= 35 and savings_pct >= 15:
+                lines.append(
+                    "✅ VERDICT: Your budget is well-balanced and aligns with the 50/30/20 golden rule. Keep it up!"
+                )
 
         return "\n".join(lines)
 

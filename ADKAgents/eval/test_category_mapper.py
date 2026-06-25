@@ -6,7 +6,13 @@ Run with:
 
 import pytest
 
-from bank_agent.shared_tools.category_mapper import categorise, CATEGORIES
+from bank_agent.shared_tools.category_mapper import (
+    categorise,
+    classify_budget,
+    CATEGORIES,
+    BUDGET_CLASSIFICATION,
+    BUDGET_TARGETS,
+)
 
 
 class TestCategorise:
@@ -148,3 +154,49 @@ class TestCategorise:
             "Subscriptions", "Rent", "Tax", "Others",
         }
         assert set(CATEGORIES) == expected
+
+
+class TestBudgetClassification:
+    """Test the 50/30/20 budget classification logic."""
+
+    # ── Needs ──────────────────────────────────────────────────
+    @pytest.mark.parametrize("category", ["Groceries", "Rent", "Tax", "Travel"])
+    def test_needs_categories(self, category: str):
+        assert classify_budget(category) == "Needs"
+
+    # ── Wants ──────────────────────────────────────────────────
+    @pytest.mark.parametrize("category", ["Subscriptions", "Others"])
+    def test_wants_categories(self, category: str):
+        assert classify_budget(category) == "Wants"
+
+    # ── Savings ────────────────────────────────────────────────
+    def test_savings_category(self):
+        assert classify_budget("Interest") == "Savings"
+
+    # ── Income ─────────────────────────────────────────────────
+    def test_income_category(self):
+        assert classify_budget("Incoming Salary") == "Income"
+
+    # ── Unknown defaults to Wants ──────────────────────────────
+    def test_unknown_defaults_to_wants(self):
+        assert classify_budget("Something Unexpected") == "Wants"
+
+    # ── All categories are classified ──────────────────────────
+    def test_all_categories_have_classification(self):
+        """Every category in the CATEGORIES tuple should have a mapping."""
+        for cat in CATEGORIES:
+            assert cat in BUDGET_CLASSIFICATION, f"Category '{cat}' missing from BUDGET_CLASSIFICATION"
+
+    # ── Budget targets ─────────────────────────────────────────
+    def test_budget_targets_sum_to_100(self):
+        """The golden-rule targets should sum to 100%."""
+        assert sum(BUDGET_TARGETS.values()) == 100.0
+
+    def test_budget_targets_keys(self):
+        assert set(BUDGET_TARGETS.keys()) == {"Needs", "Wants", "Savings"}
+
+    def test_budget_target_values(self):
+        assert BUDGET_TARGETS["Needs"] == 50.0
+        assert BUDGET_TARGETS["Wants"] == 30.0
+        assert BUDGET_TARGETS["Savings"] == 20.0
+
