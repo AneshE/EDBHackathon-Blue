@@ -4,15 +4,9 @@ from dotenv import load_dotenv
 from google.cloud import bigquery
 
 from ..observability.tool_tracer import traced_tool
+from ..shared_tools.bigquery_client import bq_client, ECOMMERCE_DATASET
 
 load_dotenv()
-
-PROJECT_ID = os.getenv("GOOGLE_CLOUD_PROJECT", "")
-ECOMMERCE_DATASET = os.getenv("ECOMMERCE_DATASET", "ecommerce_data")
-
-
-def _bq_client() -> bigquery.Client:
-    return bigquery.Client(project=PROJECT_ID if PROJECT_ID else None)
 
 
 @traced_tool
@@ -26,7 +20,7 @@ def lookup_user_orders(email: str) -> str:
         A string representation of the user's recent orders or an error message.
     """
     try:
-        client = _bq_client()
+        client = bq_client()
         query = f"""
             SELECT o.order_id, o.order_date, p.name as product_name, o.quantity, p.price, o.status
             FROM `{ECOMMERCE_DATASET}.users` u
@@ -59,7 +53,7 @@ def check_product_stock(product_name: str) -> str:
         A string containing product details including stock level, or an error message.
     """
     try:
-        client = _bq_client()
+        client = bq_client()
         query = f"""
             SELECT product_id, name, category, price, stock
             FROM `{ECOMMERCE_DATASET}.products`
@@ -103,7 +97,7 @@ def sales_reporting_query(sql: str) -> str:
             return "ERROR: Write operations are not permitted. Only SELECT queries are allowed."
 
     try:
-        client = _bq_client()
+        client = bq_client()
         resolved_sql = sql.replace("{ecommerce_dataset}", ECOMMERCE_DATASET)
         print(f"Running ecommerce query:\n{resolved_sql}")
         result_df = client.query(resolved_sql).to_dataframe()
