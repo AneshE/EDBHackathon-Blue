@@ -1,15 +1,11 @@
 import os
 
 from dotenv import load_dotenv
-from google.cloud import bigquery
 
 from ..observability.tool_tracer import traced_tool
+from ..shared_tools.bigquery_client import bq_client, safe_select, BQ_DATASET, ECOMMERCE_DATASET
 
 load_dotenv()
-
-PROJECT_ID = os.getenv("GOOGLE_CLOUD_PROJECT", "")
-BQ_DATASET = os.getenv("BQ_DATASET", "")
-ECOMMERCE_DATASET = os.getenv("ECOMMERCE_DATASET", "ecommerce_data")
 
 
 @traced_tool
@@ -30,18 +26,13 @@ def run_bigquery_query(sql: str) -> str:
     Returns:
         A plain-text table of results, or an error message if the query fails.
     """
-    # Reject anything that looks like a write operation — this tool is read-only.
-    normalised = sql.strip().upper()
-    for disallowed in ("INSERT", "UPDATE", "DELETE", "DROP", "TRUNCATE", "MERGE", "CREATE", "ALTER", "GRANT", "REVOKE"):
-        if normalised.startswith(disallowed):
-            return f"ERROR: Write operations are not permitted. Only SELECT queries are allowed."
+    try:
+        resolved_sql = safe_select(sql)
+    except ValueError as e:
+        return f"ERROR: {e}"
 
     try:
-        # If PROJECT_ID is empty, it falls back to the default credential project
-        client = bigquery.Client(project=PROJECT_ID if PROJECT_ID else None)
-
-        resolved_sql = sql.replace("{dataset}", BQ_DATASET).replace("{ecommerce_dataset}", ECOMMERCE_DATASET)
-
+        client = bq_client()
         print(f"Running BigQuery query:\n{resolved_sql}")
         result_df = client.query(resolved_sql).to_dataframe()
 

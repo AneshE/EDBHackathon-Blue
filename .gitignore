@@ -22,3 +22,4 @@ uv.lock
 DataGen/documents/*
 DataGen/*.csv
 *db
+ADKAgents/test_output*.log

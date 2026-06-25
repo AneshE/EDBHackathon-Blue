@@ -21,6 +21,12 @@ dependencies = [
     "pyyaml>=6.0",
 ]
 
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+]
+
 [project.scripts]
 setup-env = "setup_env:main"
 tf = "deploy.tf_run:main"
@@ -33,7 +39,7 @@ obliterate = "deploy.obliterate:main"
 package = true
 
 [tool.hatch.build.targets.wheel]
-packages = ["bank_agent", "deploy", "setup_env.py"]
+packages = ["bank_agent", "deploy", "setup_env.py", "eval"]
 
 [build-system]
 requires = ["hatchling"]

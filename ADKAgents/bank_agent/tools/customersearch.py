@@ -7,16 +7,9 @@ from google.adk.tools.tool_context import ToolContext
 from google.cloud import bigquery
 
 from ..observability.tool_tracer import traced_tool
+from ..shared_tools.bigquery_client import bq_client, BQ_DATASET
 
 load_dotenv()
-
-BQ_DATASET = os.getenv("BQ_DATASET", "")
-PROJECT_ID = os.getenv("GOOGLE_CLOUD_PROJECT", "")
-
-
-
-def _bq_client() -> bigquery.Client:
-    return bigquery.Client(project=PROJECT_ID if PROJECT_ID else None)
 
 
 @traced_tool
@@ -46,7 +39,7 @@ def customer_id_search(customer_id: str, tool_context: ToolContext) -> dict:
 
         if BQ_DATASET:
             print("Pulling customer details from BigQuery")
-            client = _bq_client()
+            client = bq_client()
             query = f"""
                 SELECT customer_id, name, dob, postcode
                 FROM `{BQ_DATASET}.customers`
@@ -76,8 +69,6 @@ def customer_id_search(customer_id: str, tool_context: ToolContext) -> dict:
 
             result = result_df.iloc[0].to_dict()
 
-        tool_context.state["identity_verified"] = True
-        tool_context.state["verified_customer_id"] = verified_id
         result["status"] = "success"
         return result
 
@@ -103,12 +94,12 @@ def customer_database_search(tool_context: ToolContext) -> str:
 
         if BQ_DATASET:
             print("Pulling customer records from BigQuery")
-            client = _bq_client()
+            client = bq_client()
             query = f"""
                 SELECT
                     c.address, c.age, c.customer_id, c.dob, c.gender, c.name, c.phone, c.postcode,
                     a.product_type, a.balance,
-                    t.description, t.amount, t.type, t.date
+                    t.description, t.amount, t.type, t.date, t.category
                 FROM `{BQ_DATASET}.customers` c
                 JOIN `{BQ_DATASET}.accounts` a ON c.customer_id = a.customer_id
                 LEFT JOIN `{BQ_DATASET}.transactions` t ON a.account_id = t.account_id

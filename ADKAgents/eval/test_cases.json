@@ -1,0 +1,50 @@
+[
+  {
+    "name": "c004_spending_habits_general",
+    "query": "What are C004's spending habits?",
+    "expected_keywords": ["Subscriptions", "Groceries", "spending"],
+    "description": "General spending query for C004 should highlight heavy subscription spending."
+  },
+  {
+    "name": "c004_subscription_overspending",
+    "query": "Is customer C004 overspending on subscriptions?",
+    "expected_keywords": ["Deliveroo", "Disney", "Netflix", "Subscriptions", "overspend"],
+    "description": "Should detect and flag the excessive subscription costs for C004."
+  },
+  {
+    "name": "c001_monthly_groceries",
+    "query": "Show me C001's monthly groceries breakdown",
+    "expected_keywords": ["Groceries", "Tesco", "monthly"],
+    "description": "Should show monthly grocery spending for C001 with store names."
+  },
+  {
+    "name": "c001_quarterly_overview",
+    "query": "Give me a quarterly spending overview for customer C001",
+    "expected_keywords": ["quarterly", "TOTAL SPENDING"],
+    "description": "Should produce a quarterly breakdown across all categories."
+  },
+  {
+    "name": "c005_rent_analysis",
+    "query": "How much is C005 spending on rent annually?",
+    "expected_keywords": ["Rent", "Mortgage", "annual"],
+    "description": "C005 has regular mortgage payments — should show rent/housing costs."
+  },
+  {
+    "name": "c003_half_yearly",
+    "query": "What does C003's half yearly spending look like?",
+    "expected_keywords": ["half_yearly", "TOTAL SPENDING", "Tax"],
+    "description": "Should produce a 6-month breakdown for C003."
+  },
+  {
+    "name": "c004_income_vs_spending",
+    "query": "Is C004's income enough to cover their spending?",
+    "expected_keywords": ["INCOME", "SPENDING", "cashflow"],
+    "description": "Should compare pension income against heavy subscription outgoings."
+  },
+  {
+    "name": "c001_weekly_spending",
+    "query": "Show me C001's spending this week",
+    "expected_keywords": ["weekly"],
+    "description": "Should produce a weekly breakdown — may show few or no transactions depending on timing."
+  }
+]

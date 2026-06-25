@@ -28,4 +28,5 @@ tables:
       - {name: amount,      type: FLOAT}
       - {name: type,        type: STRING}
       - {name: date,        type: STRING}
+      - {name: category,    type: STRING}
     seed_file: bq_seed/transactions.json
