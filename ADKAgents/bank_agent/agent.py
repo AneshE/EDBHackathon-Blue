@@ -18,6 +18,7 @@ from .tools.customersearch import customer_database_search, customer_id_search
 from .tools.productsearch import vertex_vector_search
 from .tools.ecommerce_tools import lookup_user_orders, check_product_stock, sales_reporting_query
 from .spending_analyst.agent import spending_analyst_agent
+from .product_recommender.agent import product_recommender_agent
 from google.adk.tools.tool_context import ToolContext
 
 load_dotenv()
@@ -70,6 +71,7 @@ verification_agent = Agent(
 )
 
 spending_analyst_agent.before_agent_callback = require_verified_identity
+product_recommender_agent.before_agent_callback = require_verified_identity
 
 root_agent = Agent(
     name="bank_agent",
@@ -77,7 +79,7 @@ root_agent = Agent(
     description="A helpful banking assistant.",
     instruction=AGENT_INSTRUCTION,
     tools=[mark_verified, mark_failed, customer_database_search, vertex_vector_search, run_bigquery_query],
-    sub_agents=[verification_agent, spending_analyst_agent],
+    sub_agents=[verification_agent, spending_analyst_agent, product_recommender_agent],
     before_model_callback=before_model_callback,
     after_model_callback=after_model_callback,
 )
