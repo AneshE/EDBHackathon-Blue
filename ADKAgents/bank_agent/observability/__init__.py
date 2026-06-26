@@ -21,6 +21,12 @@ from .tool_tracer import traced_tool
 
 def setup_observability() -> None:
     """One-shot initialisation — call at import time (e.g. in ``agent.py``)."""
+    import logging
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s [%(levelname)s] %(name)s — %(message)s",
+        datefmt="%H:%M:%S",
+    )
     init_otel()
 
 

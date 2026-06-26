@@ -46,5 +46,30 @@
     "query": "Show me C001's spending this week",
     "expected_keywords": ["weekly"],
     "description": "Should produce a weekly breakdown — may show few or no transactions depending on timing."
+  },
+  {
+    "name": "ui_advisor_budget_blueprint",
+    "query": "Provide the structured JSON financial advisor data for customer C004 including budget blueprint.",
+    "expected_keywords": ["budget_blueprint", "metric_summary", "table_data", "income", "spending"],
+    "description": "UI advisor should return JSON with budget_blueprint step containing metric_summary and table_data."
+  },
+  {
+    "name": "ui_advisor_perk_optimization",
+    "query": "Analyse C004's spending and suggest perk optimizations in JSON format.",
+    "expected_keywords": ["perk_optimization", "leak_detected", "action_prompt", "options"],
+    "description": "UI advisor should identify subscription leaks and suggest perk optimizations."
+  },
+  {
+    "name": "ui_advisor_wealth_growth",
+    "query": "Generate the wealth growth plan JSON for customer C004.",
+    "expected_keywords": ["wealth_growth_plan", "short_term_projection", "long_term_projection"],
+    "description": "UI advisor should return growth forecast with short-term and long-term projections."
+  },
+  {
+    "name": "ui_advisor_full_json_schema",
+    "query": "Give me the complete financial advisor UI data for C004 with all steps.",
+    "expected_keywords": ["ui_steps", "budget_blueprint", "perk_optimization", "wealth_growth_plan", "current_user_intent"],
+    "description": "UI advisor should return the complete JSON response with all three UI steps."
   }
 ]
+
