@@ -13,7 +13,8 @@ from google.cloud import bigquery
 
 from ..observability.tool_tracer import traced_tool
 from .bigquery_client import bq_client
-from .category_mapper import categorise, classify_budget, BUDGET_TARGETS
+from .category_mapper import BUDGET_TARGETS
+from .llm_category_mapper import categorise, classify_budget
 
 load_dotenv()
 

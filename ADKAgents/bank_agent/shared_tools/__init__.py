@@ -9,7 +9,8 @@ Exports:
 """
 
 from .bigquery_client import bq_client, safe_select
-from .category_mapper import categorise, CATEGORIES
+from .category_mapper import CATEGORIES
+from .llm_category_mapper import categorise
 from .transaction_tools import get_transactions
 from .spending_analysis_tools import analyse_spending
 

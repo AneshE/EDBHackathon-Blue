@@ -1,0 +1,215 @@
+{
+  "descriptions": {
+    "sainsbury's supermarket": [
+      "Groceries",
+      "Needs"
+    ],
+    "netflix video streaming": [
+      "Streaming Services",
+      "Wants"
+    ],
+    "pension": [
+      "Pension",
+      "Income"
+    ],
+    "deliveroo plus": [
+      "Subscriptions",
+      "Wants"
+    ],
+    "disney+": [
+      "Subscriptions",
+      "Wants"
+    ],
+    "netflix": [
+      "Netflix",
+      "Wants"
+    ],
+    "spotify premium": [
+      "Subscriptions",
+      "Wants"
+    ],
+    "amazon prime": [
+      "Subscriptions",
+      "Wants"
+    ],
+    "ebay seller fees": [
+      "Seller Fees",
+      "Needs"
+    ],
+    "deliveroo order": [
+      "Food Delivery",
+      "Wants"
+    ],
+    "tesco": [
+      "Groceries",
+      "Needs"
+    ],
+    "supermarket": [
+      "Groceries",
+      "Needs"
+    ],
+    "gwr railway ticket": [
+      "Public Transport",
+      "Needs"
+    ],
+    "caff\u00e8 nero": [
+      "Cafe",
+      "Wants"
+    ],
+    "apple music": [
+      "Subscriptions",
+      "Wants"
+    ],
+    "isa investment": [
+      "ISA Investment",
+      "Savings"
+    ],
+    "gym membership": [
+      "Gym Membership",
+      "Wants"
+    ],
+    "vending machine": [
+      "Vending Machine",
+      "Wants"
+    ],
+    "stagecoach bus pass": [
+      "Public Transport",
+      "Needs"
+    ],
+    "lidl supermarket": [
+      "Groceries",
+      "Needs"
+    ],
+    "aldi": [
+      "Groceries",
+      "Needs"
+    ],
+    "local espresso bar": [
+      "Cafe",
+      "Wants"
+    ],
+    "pret a manger": [
+      "Cafe",
+      "Wants"
+    ],
+    "co-op food": [
+      "Groceries",
+      "Needs"
+    ],
+    "aldi grocery": [
+      "Groceries",
+      "Needs"
+    ],
+    "pet insurance": [
+      "Pet Insurance",
+      "Needs"
+    ],
+    "aviva car insurance": [
+      "Car Insurance",
+      "Needs"
+    ],
+    "regular savings transfer": [
+      "Savings Transfer",
+      "Savings"
+    ],
+    "index fund deposit": [
+      "Investments",
+      "Savings"
+    ],
+    "freelance design work": [
+      "Freelance Income",
+      "Income"
+    ],
+    "corner shop sweets": [
+      "Sweets",
+      "Wants"
+    ],
+    "ebay purchase": [
+      "Shopping",
+      "Wants"
+    ],
+    "amazon prime video": [
+      "Streaming Service",
+      "Wants"
+    ],
+    "refund - amazon retail": [
+      "Shopping Refund",
+      "Income"
+    ],
+    "newspaper kiosk": [
+      "Newspapers",
+      "Wants"
+    ],
+    "currys television": [
+      "Electronics",
+      "Wants"
+    ],
+    "audible": [
+      "Subscriptions",
+      "Wants"
+    ],
+    "costa coffee": [
+      "Cafe",
+      "Wants"
+    ],
+    "uber trip": [
+      "Ride Share",
+      "Wants"
+    ],
+    "zara store": [
+      "Shopping",
+      "Wants"
+    ],
+    "tesco express": [
+      "Groceries",
+      "Needs"
+    ],
+    "h&m": [
+      "Clothing",
+      "Wants"
+    ],
+    "parking meter": [
+      "Parking",
+      "Needs"
+    ],
+    "trainline ticket": [
+      "Public Transport",
+      "Needs"
+    ]
+  },
+  "categories": {
+    "Groceries": "Needs",
+    "Rent": "Needs",
+    "Tax": "Needs",
+    "Travel": "Needs",
+    "Subscriptions": "Wants",
+    "Others": "Wants",
+    "Interest": "Savings",
+    "Incoming Salary": "Income",
+    "Streaming Services": "Wants",
+    "Fine Dining Restaurant": "Wants",
+    "Pension": "Income",
+    "Netflix": "Wants",
+    "Seller Fees": "Needs",
+    "Food Delivery": "Wants",
+    "Public Transport": "Needs",
+    "Cafe": "Wants",
+    "ISA Investment": "Savings",
+    "Gym Membership": "Wants",
+    "Vending Machine": "Wants",
+    "Pet Insurance": "Needs",
+    "Car Insurance": "Needs",
+    "Savings Transfer": "Savings",
+    "Investments": "Savings",
+    "Freelance Income": "Income",
+    "Sweets": "Wants",
+    "Shopping": "Wants",
+    "Streaming Service": "Wants",
+    "Shopping Refund": "Income",
+    "Newspapers": "Wants",
+    "Electronics": "Wants",
+    "Ride Share": "Wants",
+    "Clothing": "Wants",
+    "Parking": "Needs"
+  }
+}

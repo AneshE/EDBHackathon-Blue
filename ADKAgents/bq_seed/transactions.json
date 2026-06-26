@@ -1,278 +1,4240 @@
-{"account_id":"A001","description":"Salary - Acme Corp","amount":3200.00,"type":"credit","date":"2025-07-01","category":"Incoming Salary"}
-{"account_id":"A001","description":"Tesco Weekly Shop","amount":-52.30,"type":"debit","date":"2025-07-05","category":"Groceries"}
-{"account_id":"A001","description":"Netflix Monthly","amount":-15.99,"type":"debit","date":"2025-07-08","category":"Subscriptions"}
-{"account_id":"A001","description":"Council Tax","amount":-145.00,"type":"debit","date":"2025-07-10","category":"Tax"}
-{"account_id":"A001","description":"TfL Oyster Top-Up","amount":-40.00,"type":"debit","date":"2025-07-14","category":"Travel"}
-{"account_id":"A001","description":"Electricity Bill","amount":-82.50,"type":"debit","date":"2025-07-20","category":"Others"}
-{"account_id":"A001","description":"Salary - Acme Corp","amount":3200.00,"type":"credit","date":"2025-08-01","category":"Incoming Salary"}
-{"account_id":"A001","description":"Sainsbury's","amount":-47.85,"type":"debit","date":"2025-08-04","category":"Groceries"}
-{"account_id":"A001","description":"Netflix Monthly","amount":-15.99,"type":"debit","date":"2025-08-08","category":"Subscriptions"}
-{"account_id":"A001","description":"Council Tax","amount":-145.00,"type":"debit","date":"2025-08-10","category":"Tax"}
-{"account_id":"A001","description":"Uber","amount":-18.50,"type":"debit","date":"2025-08-15","category":"Travel"}
-{"account_id":"A001","description":"Mobile Phone Bill","amount":-28.00,"type":"debit","date":"2025-08-22","category":"Others"}
-{"account_id":"A001","description":"Salary - Acme Corp","amount":3200.00,"type":"credit","date":"2025-09-01","category":"Incoming Salary"}
-{"account_id":"A001","description":"Aldi Weekly","amount":-38.90,"type":"debit","date":"2025-09-06","category":"Groceries"}
-{"account_id":"A001","description":"Netflix Monthly","amount":-15.99,"type":"debit","date":"2025-09-08","category":"Subscriptions"}
-{"account_id":"A001","description":"Spotify Premium","amount":-10.99,"type":"debit","date":"2025-09-08","category":"Subscriptions"}
-{"account_id":"A001","description":"Council Tax","amount":-145.00,"type":"debit","date":"2025-09-10","category":"Tax"}
-{"account_id":"A001","description":"National Rail","amount":-65.00,"type":"debit","date":"2025-09-18","category":"Travel"}
-{"account_id":"A001","description":"Salary - Acme Corp","amount":3200.00,"type":"credit","date":"2025-10-01","category":"Incoming Salary"}
-{"account_id":"A001","description":"Waitrose","amount":-63.20,"type":"debit","date":"2025-10-03","category":"Groceries"}
-{"account_id":"A001","description":"Netflix Monthly","amount":-15.99,"type":"debit","date":"2025-10-08","category":"Subscriptions"}
-{"account_id":"A001","description":"Council Tax","amount":-145.00,"type":"debit","date":"2025-10-10","category":"Tax"}
-{"account_id":"A001","description":"Salary - Acme Corp","amount":3200.00,"type":"credit","date":"2025-11-01","category":"Incoming Salary"}
-{"account_id":"A001","description":"Tesco Weekly Shop","amount":-55.40,"type":"debit","date":"2025-11-07","category":"Groceries"}
-{"account_id":"A001","description":"Netflix Monthly","amount":-15.99,"type":"debit","date":"2025-11-08","category":"Subscriptions"}
-{"account_id":"A001","description":"Council Tax","amount":-145.00,"type":"debit","date":"2025-11-10","category":"Tax"}
-{"account_id":"A001","description":"EasyJet Flight","amount":-189.00,"type":"debit","date":"2025-11-20","category":"Travel"}
-{"account_id":"A001","description":"Salary - Acme Corp","amount":3200.00,"type":"credit","date":"2025-12-01","category":"Incoming Salary"}
-{"account_id":"A001","description":"Sainsbury's Christmas Shop","amount":-112.50,"type":"debit","date":"2025-12-18","category":"Groceries"}
-{"account_id":"A001","description":"Netflix Monthly","amount":-15.99,"type":"debit","date":"2025-12-08","category":"Subscriptions"}
-{"account_id":"A001","description":"Council Tax","amount":-145.00,"type":"debit","date":"2025-12-10","category":"Tax"}
-{"account_id":"A001","description":"Salary - Acme Corp","amount":3200.00,"type":"credit","date":"2026-01-01","category":"Incoming Salary"}
-{"account_id":"A001","description":"Tesco","amount":-48.70,"type":"debit","date":"2026-01-06","category":"Groceries"}
-{"account_id":"A001","description":"Netflix Monthly","amount":-15.99,"type":"debit","date":"2026-01-08","category":"Subscriptions"}
-{"account_id":"A001","description":"Council Tax","amount":-145.00,"type":"debit","date":"2026-01-10","category":"Tax"}
-{"account_id":"A001","description":"Salary - Acme Corp","amount":3200.00,"type":"credit","date":"2026-02-01","category":"Incoming Salary"}
-{"account_id":"A001","description":"Lidl","amount":-35.60,"type":"debit","date":"2026-02-05","category":"Groceries"}
-{"account_id":"A001","description":"Netflix Monthly","amount":-15.99,"type":"debit","date":"2026-02-08","category":"Subscriptions"}
-{"account_id":"A001","description":"Council Tax","amount":-145.00,"type":"debit","date":"2026-02-10","category":"Tax"}
-{"account_id":"A001","description":"Salary - Acme Corp","amount":3200.00,"type":"credit","date":"2026-03-01","category":"Incoming Salary"}
-{"account_id":"A001","description":"Tesco Weekly Shop","amount":-51.90,"type":"debit","date":"2026-03-07","category":"Groceries"}
-{"account_id":"A001","description":"Netflix Monthly","amount":-15.99,"type":"debit","date":"2026-03-08","category":"Subscriptions"}
-{"account_id":"A001","description":"Council Tax","amount":-145.00,"type":"debit","date":"2026-03-10","category":"Tax"}
-{"account_id":"A001","description":"Salary - Acme Corp","amount":3200.00,"type":"credit","date":"2026-04-01","category":"Incoming Salary"}
-{"account_id":"A001","description":"Sainsbury's","amount":-44.10,"type":"debit","date":"2026-04-04","category":"Groceries"}
-{"account_id":"A001","description":"Netflix Monthly","amount":-15.99,"type":"debit","date":"2026-04-08","category":"Subscriptions"}
-{"account_id":"A001","description":"HMRC Self Assessment","amount":-850.00,"type":"debit","date":"2026-04-15","category":"Tax"}
-{"account_id":"A001","description":"Salary - Acme Corp","amount":3200.00,"type":"credit","date":"2026-05-01","category":"Incoming Salary"}
-{"account_id":"A001","description":"Tesco","amount":-45.80,"type":"debit","date":"2026-05-05","category":"Groceries"}
-{"account_id":"A001","description":"Netflix Monthly","amount":-15.99,"type":"debit","date":"2026-05-08","category":"Subscriptions"}
-{"account_id":"A001","description":"Council Tax","amount":-145.00,"type":"debit","date":"2026-05-10","category":"Tax"}
-{"account_id":"A001","description":"Electricity Bill","amount":-82.50,"type":"debit","date":"2026-05-20","category":"Others"}
-{"account_id":"A001","description":"Streaming Service","amount":-17.99,"type":"debit","date":"2026-05-28","category":"Subscriptions"}
-{"account_id":"A001","description":"Salary - Acme Corp","amount":3200.00,"type":"credit","date":"2026-06-01","category":"Incoming Salary"}
-{"account_id":"A001","description":"Supermarket","amount":-45.80,"type":"debit","date":"2026-06-12","category":"Groceries"}
-{"account_id":"A001","description":"TfL Oyster","amount":-35.00,"type":"debit","date":"2026-06-15","category":"Travel"}
-{"account_id":"A002","description":"Interest Payment","amount":24.50,"type":"credit","date":"2025-07-01","category":"Interest"}
-{"account_id":"A002","description":"Savings Interest","amount":24.50,"type":"credit","date":"2025-10-01","category":"Interest"}
-{"account_id":"A002","description":"Savings Interest","amount":25.10,"type":"credit","date":"2026-01-01","category":"Interest"}
-{"account_id":"A002","description":"Savings Interest","amount":25.80,"type":"credit","date":"2026-04-01","category":"Interest"}
-{"account_id":"A002","description":"Interest Payment","amount":24.50,"type":"credit","date":"2026-06-01","category":"Interest"}
-{"account_id":"A003","description":"Payroll - City Council","amount":2800.00,"type":"credit","date":"2025-07-01","category":"Incoming Salary"}
-{"account_id":"A003","description":"Coffee Shop","amount":-4.75,"type":"debit","date":"2025-07-08","category":"Others"}
-{"account_id":"A003","description":"Council Tax","amount":-145.00,"type":"debit","date":"2025-07-15","category":"Tax"}
-{"account_id":"A003","description":"Tesco","amount":-38.50,"type":"debit","date":"2025-07-20","category":"Groceries"}
-{"account_id":"A003","description":"Payroll - City Council","amount":2800.00,"type":"credit","date":"2025-08-01","category":"Incoming Salary"}
-{"account_id":"A003","description":"Online Retailer","amount":-27.99,"type":"debit","date":"2025-08-12","category":"Others"}
-{"account_id":"A003","description":"Payroll - City Council","amount":2800.00,"type":"credit","date":"2025-09-01","category":"Incoming Salary"}
-{"account_id":"A003","description":"Aldi","amount":-32.40,"type":"debit","date":"2025-09-10","category":"Groceries"}
-{"account_id":"A003","description":"National Rail","amount":-42.00,"type":"debit","date":"2025-09-22","category":"Travel"}
-{"account_id":"A003","description":"Payroll - City Council","amount":2800.00,"type":"credit","date":"2025-10-01","category":"Incoming Salary"}
-{"account_id":"A003","description":"Council Tax","amount":-145.00,"type":"debit","date":"2025-10-15","category":"Tax"}
-{"account_id":"A003","description":"Payroll - City Council","amount":2800.00,"type":"credit","date":"2025-11-01","category":"Incoming Salary"}
-{"account_id":"A003","description":"Uber","amount":-12.80,"type":"debit","date":"2025-11-08","category":"Travel"}
-{"account_id":"A003","description":"Payroll - City Council","amount":2800.00,"type":"credit","date":"2025-12-01","category":"Incoming Salary"}
-{"account_id":"A003","description":"Gym Membership","amount":-35.00,"type":"debit","date":"2025-12-05","category":"Subscriptions"}
-{"account_id":"A003","description":"Payroll - City Council","amount":2800.00,"type":"credit","date":"2026-01-01","category":"Incoming Salary"}
-{"account_id":"A003","description":"Sainsbury's","amount":-41.20,"type":"debit","date":"2026-01-08","category":"Groceries"}
-{"account_id":"A003","description":"Payroll - City Council","amount":2800.00,"type":"credit","date":"2026-02-01","category":"Incoming Salary"}
-{"account_id":"A003","description":"Council Tax","amount":-145.00,"type":"debit","date":"2026-02-15","category":"Tax"}
-{"account_id":"A003","description":"Payroll - City Council","amount":2800.00,"type":"credit","date":"2026-03-01","category":"Incoming Salary"}
-{"account_id":"A003","description":"Tesco","amount":-36.80,"type":"debit","date":"2026-03-10","category":"Groceries"}
-{"account_id":"A003","description":"Payroll - City Council","amount":2800.00,"type":"credit","date":"2026-04-01","category":"Incoming Salary"}
-{"account_id":"A003","description":"Coffee Shop","amount":-5.20,"type":"debit","date":"2026-04-08","category":"Others"}
-{"account_id":"A003","description":"Payroll - City Council","amount":2800.00,"type":"credit","date":"2026-05-01","category":"Incoming Salary"}
-{"account_id":"A003","description":"Council Tax","amount":-145.00,"type":"debit","date":"2026-05-15","category":"Tax"}
-{"account_id":"A003","description":"Online Retailer","amount":-32.99,"type":"debit","date":"2026-05-30","category":"Others"}
-{"account_id":"A003","description":"Payroll - City Council","amount":2800.00,"type":"credit","date":"2026-06-01","category":"Incoming Salary"}
-{"account_id":"A003","description":"Coffee Shop","amount":-4.75,"type":"debit","date":"2026-06-13","category":"Others"}
-{"account_id":"A005","description":"Freelance Invoice","amount":1500.00,"type":"credit","date":"2025-07-10","category":"Incoming Salary"}
-{"account_id":"A005","description":"Rent","amount":-950.00,"type":"debit","date":"2025-07-01","category":"Rent"}
-{"account_id":"A005","description":"Aldi","amount":-29.50,"type":"debit","date":"2025-07-12","category":"Groceries"}
-{"account_id":"A005","description":"Freelance Invoice","amount":1800.00,"type":"credit","date":"2025-08-15","category":"Incoming Salary"}
-{"account_id":"A005","description":"Rent","amount":-950.00,"type":"debit","date":"2025-08-01","category":"Rent"}
-{"account_id":"A005","description":"Gym Membership","amount":-35.00,"type":"debit","date":"2025-08-25","category":"Subscriptions"}
-{"account_id":"A005","description":"Freelance Invoice","amount":1200.00,"type":"credit","date":"2025-09-20","category":"Incoming Salary"}
-{"account_id":"A005","description":"Rent","amount":-950.00,"type":"debit","date":"2025-09-01","category":"Rent"}
-{"account_id":"A005","description":"Trainline","amount":-55.00,"type":"debit","date":"2025-09-14","category":"Travel"}
-{"account_id":"A005","description":"Freelance Invoice","amount":2100.00,"type":"credit","date":"2025-10-05","category":"Incoming Salary"}
-{"account_id":"A005","description":"Rent","amount":-950.00,"type":"debit","date":"2025-10-01","category":"Rent"}
-{"account_id":"A005","description":"Spotify Premium","amount":-10.99,"type":"debit","date":"2025-10-08","category":"Subscriptions"}
-{"account_id":"A005","description":"Freelance Invoice","amount":1600.00,"type":"credit","date":"2025-11-12","category":"Incoming Salary"}
-{"account_id":"A005","description":"Rent","amount":-950.00,"type":"debit","date":"2025-11-01","category":"Rent"}
-{"account_id":"A005","description":"Freelance Invoice","amount":1400.00,"type":"credit","date":"2025-12-18","category":"Incoming Salary"}
-{"account_id":"A005","description":"Rent","amount":-950.00,"type":"debit","date":"2025-12-01","category":"Rent"}
-{"account_id":"A005","description":"HMRC Self Assessment","amount":-620.00,"type":"debit","date":"2025-12-15","category":"Tax"}
-{"account_id":"A005","description":"Freelance Invoice","amount":1500.00,"type":"credit","date":"2026-01-10","category":"Incoming Salary"}
-{"account_id":"A005","description":"Rent","amount":-950.00,"type":"debit","date":"2026-01-01","category":"Rent"}
-{"account_id":"A005","description":"Freelance Invoice","amount":1700.00,"type":"credit","date":"2026-02-08","category":"Incoming Salary"}
-{"account_id":"A005","description":"Rent","amount":-950.00,"type":"debit","date":"2026-02-01","category":"Rent"}
-{"account_id":"A005","description":"Freelance Invoice","amount":1500.00,"type":"credit","date":"2026-03-12","category":"Incoming Salary"}
-{"account_id":"A005","description":"Rent","amount":-950.00,"type":"debit","date":"2026-03-01","category":"Rent"}
-{"account_id":"A005","description":"Waitrose","amount":-45.60,"type":"debit","date":"2026-03-15","category":"Groceries"}
-{"account_id":"A005","description":"Freelance Invoice","amount":1900.00,"type":"credit","date":"2026-04-05","category":"Incoming Salary"}
-{"account_id":"A005","description":"Rent","amount":-950.00,"type":"debit","date":"2026-04-01","category":"Rent"}
-{"account_id":"A005","description":"Freelance Invoice","amount":1500.00,"type":"credit","date":"2026-05-10","category":"Incoming Salary"}
-{"account_id":"A005","description":"Rent","amount":-950.00,"type":"debit","date":"2026-05-01","category":"Rent"}
-{"account_id":"A005","description":"Gym Membership","amount":-35.00,"type":"debit","date":"2026-05-25","category":"Subscriptions"}
-{"account_id":"A005","description":"Freelance Invoice","amount":1500.00,"type":"credit","date":"2026-06-10","category":"Incoming Salary"}
-{"account_id":"A005","description":"Rent","amount":-950.00,"type":"debit","date":"2026-06-01","category":"Rent"}
-{"account_id":"A006","description":"Pension","amount":1200.00,"type":"credit","date":"2025-07-01","category":"Incoming Salary"}
-{"account_id":"A006","description":"Deliveroo Plus","amount":-11.99,"type":"debit","date":"2025-07-01","category":"Subscriptions"}
-{"account_id":"A006","description":"Disney+","amount":-10.99,"type":"debit","date":"2025-07-02","category":"Subscriptions"}
-{"account_id":"A006","description":"Netflix","amount":-15.99,"type":"debit","date":"2025-07-03","category":"Subscriptions"}
-{"account_id":"A006","description":"Spotify Premium","amount":-10.99,"type":"debit","date":"2025-07-03","category":"Subscriptions"}
-{"account_id":"A006","description":"Amazon Prime","amount":-8.99,"type":"debit","date":"2025-07-04","category":"Subscriptions"}
-{"account_id":"A006","description":"Deliveroo Order","amount":-24.50,"type":"debit","date":"2025-07-06","category":"Subscriptions"}
-{"account_id":"A006","description":"Deliveroo Order","amount":-31.80,"type":"debit","date":"2025-07-09","category":"Subscriptions"}
-{"account_id":"A006","description":"Deliveroo Order","amount":-18.90,"type":"debit","date":"2025-07-12","category":"Subscriptions"}
-{"account_id":"A006","description":"Tesco","amount":-34.20,"type":"debit","date":"2025-07-15","category":"Groceries"}
-{"account_id":"A006","description":"Deliveroo Order","amount":-27.40,"type":"debit","date":"2025-07-18","category":"Subscriptions"}
-{"account_id":"A006","description":"Supermarket","amount":-67.30,"type":"debit","date":"2025-07-22","category":"Groceries"}
-{"account_id":"A006","description":"Pension","amount":1200.00,"type":"credit","date":"2025-08-01","category":"Incoming Salary"}
-{"account_id":"A006","description":"Deliveroo Plus","amount":-11.99,"type":"debit","date":"2025-08-01","category":"Subscriptions"}
-{"account_id":"A006","description":"Disney+","amount":-10.99,"type":"debit","date":"2025-08-02","category":"Subscriptions"}
-{"account_id":"A006","description":"Netflix","amount":-15.99,"type":"debit","date":"2025-08-03","category":"Subscriptions"}
-{"account_id":"A006","description":"Spotify Premium","amount":-10.99,"type":"debit","date":"2025-08-03","category":"Subscriptions"}
-{"account_id":"A006","description":"Apple Music","amount":-10.99,"type":"debit","date":"2025-08-04","category":"Subscriptions"}
-{"account_id":"A006","description":"Amazon Prime","amount":-8.99,"type":"debit","date":"2025-08-04","category":"Subscriptions"}
-{"account_id":"A006","description":"Deliveroo Order","amount":-22.50,"type":"debit","date":"2025-08-08","category":"Subscriptions"}
-{"account_id":"A006","description":"Deliveroo Order","amount":-35.60,"type":"debit","date":"2025-08-14","category":"Subscriptions"}
-{"account_id":"A006","description":"Gym Membership","amount":-35.00,"type":"debit","date":"2025-08-15","category":"Subscriptions"}
-{"account_id":"A006","description":"Deliveroo Order","amount":-19.80,"type":"debit","date":"2025-08-20","category":"Subscriptions"}
-{"account_id":"A006","description":"Aldi","amount":-28.50,"type":"debit","date":"2025-08-25","category":"Groceries"}
-{"account_id":"A006","description":"Pension","amount":1200.00,"type":"credit","date":"2025-09-01","category":"Incoming Salary"}
-{"account_id":"A006","description":"Deliveroo Plus","amount":-11.99,"type":"debit","date":"2025-09-01","category":"Subscriptions"}
-{"account_id":"A006","description":"Disney+","amount":-10.99,"type":"debit","date":"2025-09-02","category":"Subscriptions"}
-{"account_id":"A006","description":"Netflix","amount":-15.99,"type":"debit","date":"2025-09-03","category":"Subscriptions"}
-{"account_id":"A006","description":"Spotify Premium","amount":-10.99,"type":"debit","date":"2025-09-03","category":"Subscriptions"}
-{"account_id":"A006","description":"Apple Music","amount":-10.99,"type":"debit","date":"2025-09-04","category":"Subscriptions"}
-{"account_id":"A006","description":"Amazon Prime","amount":-8.99,"type":"debit","date":"2025-09-04","category":"Subscriptions"}
-{"account_id":"A006","description":"Deliveroo Order","amount":-28.90,"type":"debit","date":"2025-09-10","category":"Subscriptions"}
-{"account_id":"A006","description":"Deliveroo Order","amount":-33.20,"type":"debit","date":"2025-09-16","category":"Subscriptions"}
-{"account_id":"A006","description":"Gym Membership","amount":-35.00,"type":"debit","date":"2025-09-15","category":"Subscriptions"}
-{"account_id":"A006","description":"Deliveroo Order","amount":-21.50,"type":"debit","date":"2025-09-22","category":"Subscriptions"}
-{"account_id":"A006","description":"Pension","amount":1200.00,"type":"credit","date":"2025-10-01","category":"Incoming Salary"}
-{"account_id":"A006","description":"Deliveroo Plus","amount":-11.99,"type":"debit","date":"2025-10-01","category":"Subscriptions"}
-{"account_id":"A006","description":"Disney+","amount":-10.99,"type":"debit","date":"2025-10-02","category":"Subscriptions"}
-{"account_id":"A006","description":"Netflix","amount":-15.99,"type":"debit","date":"2025-10-03","category":"Subscriptions"}
-{"account_id":"A006","description":"Deliveroo Order","amount":-26.80,"type":"debit","date":"2025-10-08","category":"Subscriptions"}
-{"account_id":"A006","description":"Deliveroo Order","amount":-38.40,"type":"debit","date":"2025-10-15","category":"Subscriptions"}
-{"account_id":"A006","description":"Gym Membership","amount":-35.00,"type":"debit","date":"2025-10-15","category":"Subscriptions"}
-{"account_id":"A006","description":"Pension","amount":1200.00,"type":"credit","date":"2025-11-01","category":"Incoming Salary"}
-{"account_id":"A006","description":"Deliveroo Plus","amount":-11.99,"type":"debit","date":"2025-11-01","category":"Subscriptions"}
-{"account_id":"A006","description":"Disney+","amount":-10.99,"type":"debit","date":"2025-11-02","category":"Subscriptions"}
-{"account_id":"A006","description":"Netflix","amount":-15.99,"type":"debit","date":"2025-11-03","category":"Subscriptions"}
-{"account_id":"A006","description":"Spotify Premium","amount":-10.99,"type":"debit","date":"2025-11-03","category":"Subscriptions"}
-{"account_id":"A006","description":"Apple Music","amount":-10.99,"type":"debit","date":"2025-11-04","category":"Subscriptions"}
-{"account_id":"A006","description":"Deliveroo Order","amount":-29.90,"type":"debit","date":"2025-11-10","category":"Subscriptions"}
-{"account_id":"A006","description":"Deliveroo Order","amount":-22.30,"type":"debit","date":"2025-11-18","category":"Subscriptions"}
-{"account_id":"A006","description":"Gym Membership","amount":-35.00,"type":"debit","date":"2025-11-15","category":"Subscriptions"}
-{"account_id":"A006","description":"Pension","amount":1200.00,"type":"credit","date":"2025-12-01","category":"Incoming Salary"}
-{"account_id":"A006","description":"Deliveroo Plus","amount":-11.99,"type":"debit","date":"2025-12-01","category":"Subscriptions"}
-{"account_id":"A006","description":"Disney+","amount":-10.99,"type":"debit","date":"2025-12-02","category":"Subscriptions"}
-{"account_id":"A006","description":"Netflix","amount":-15.99,"type":"debit","date":"2025-12-03","category":"Subscriptions"}
-{"account_id":"A006","description":"Spotify Premium","amount":-10.99,"type":"debit","date":"2025-12-03","category":"Subscriptions"}
-{"account_id":"A006","description":"Amazon Prime","amount":-8.99,"type":"debit","date":"2025-12-04","category":"Subscriptions"}
-{"account_id":"A006","description":"Deliveroo Order","amount":-41.20,"type":"debit","date":"2025-12-12","category":"Subscriptions"}
-{"account_id":"A006","description":"Deliveroo Order","amount":-25.60,"type":"debit","date":"2025-12-20","category":"Subscriptions"}
-{"account_id":"A006","description":"Pension","amount":1200.00,"type":"credit","date":"2026-01-01","category":"Incoming Salary"}
-{"account_id":"A006","description":"Deliveroo Plus","amount":-11.99,"type":"debit","date":"2026-01-01","category":"Subscriptions"}
-{"account_id":"A006","description":"Disney+","amount":-10.99,"type":"debit","date":"2026-01-02","category":"Subscriptions"}
-{"account_id":"A006","description":"Netflix","amount":-15.99,"type":"debit","date":"2026-01-03","category":"Subscriptions"}
-{"account_id":"A006","description":"Spotify Premium","amount":-10.99,"type":"debit","date":"2026-01-03","category":"Subscriptions"}
-{"account_id":"A006","description":"Apple Music","amount":-10.99,"type":"debit","date":"2026-01-04","category":"Subscriptions"}
-{"account_id":"A006","description":"Amazon Prime","amount":-8.99,"type":"debit","date":"2026-01-04","category":"Subscriptions"}
-{"account_id":"A006","description":"Deliveroo Order","amount":-32.50,"type":"debit","date":"2026-01-10","category":"Subscriptions"}
-{"account_id":"A006","description":"Deliveroo Order","amount":-27.80,"type":"debit","date":"2026-01-17","category":"Subscriptions"}
-{"account_id":"A006","description":"Deliveroo Order","amount":-19.90,"type":"debit","date":"2026-01-24","category":"Subscriptions"}
-{"account_id":"A006","description":"Gym Membership","amount":-35.00,"type":"debit","date":"2026-01-15","category":"Subscriptions"}
-{"account_id":"A006","description":"Pension","amount":1200.00,"type":"credit","date":"2026-02-01","category":"Incoming Salary"}
-{"account_id":"A006","description":"Deliveroo Plus","amount":-11.99,"type":"debit","date":"2026-02-01","category":"Subscriptions"}
-{"account_id":"A006","description":"Disney+","amount":-10.99,"type":"debit","date":"2026-02-02","category":"Subscriptions"}
-{"account_id":"A006","description":"Netflix","amount":-15.99,"type":"debit","date":"2026-02-03","category":"Subscriptions"}
-{"account_id":"A006","description":"Deliveroo Order","amount":-36.70,"type":"debit","date":"2026-02-08","category":"Subscriptions"}
-{"account_id":"A006","description":"Deliveroo Order","amount":-23.40,"type":"debit","date":"2026-02-15","category":"Subscriptions"}
-{"account_id":"A006","description":"Gym Membership","amount":-35.00,"type":"debit","date":"2026-02-15","category":"Subscriptions"}
-{"account_id":"A006","description":"Pension","amount":1200.00,"type":"credit","date":"2026-03-01","category":"Incoming Salary"}
-{"account_id":"A006","description":"Deliveroo Plus","amount":-11.99,"type":"debit","date":"2026-03-01","category":"Subscriptions"}
-{"account_id":"A006","description":"Disney+","amount":-10.99,"type":"debit","date":"2026-03-02","category":"Subscriptions"}
-{"account_id":"A006","description":"Netflix","amount":-15.99,"type":"debit","date":"2026-03-03","category":"Subscriptions"}
-{"account_id":"A006","description":"Spotify Premium","amount":-10.99,"type":"debit","date":"2026-03-03","category":"Subscriptions"}
-{"account_id":"A006","description":"Apple Music","amount":-10.99,"type":"debit","date":"2026-03-04","category":"Subscriptions"}
-{"account_id":"A006","description":"Amazon Prime","amount":-8.99,"type":"debit","date":"2026-03-04","category":"Subscriptions"}
-{"account_id":"A006","description":"Deliveroo Order","amount":-29.90,"type":"debit","date":"2026-03-10","category":"Subscriptions"}
-{"account_id":"A006","description":"Deliveroo Order","amount":-34.50,"type":"debit","date":"2026-03-18","category":"Subscriptions"}
-{"account_id":"A006","description":"Gym Membership","amount":-35.00,"type":"debit","date":"2026-03-15","category":"Subscriptions"}
-{"account_id":"A006","description":"Pension","amount":1200.00,"type":"credit","date":"2026-04-01","category":"Incoming Salary"}
-{"account_id":"A006","description":"Deliveroo Plus","amount":-11.99,"type":"debit","date":"2026-04-01","category":"Subscriptions"}
-{"account_id":"A006","description":"Disney+","amount":-10.99,"type":"debit","date":"2026-04-02","category":"Subscriptions"}
-{"account_id":"A006","description":"Netflix","amount":-15.99,"type":"debit","date":"2026-04-03","category":"Subscriptions"}
-{"account_id":"A006","description":"Deliveroo Order","amount":-28.40,"type":"debit","date":"2026-04-08","category":"Subscriptions"}
-{"account_id":"A006","description":"Deliveroo Order","amount":-39.90,"type":"debit","date":"2026-04-16","category":"Subscriptions"}
-{"account_id":"A006","description":"Gym Membership","amount":-35.00,"type":"debit","date":"2026-04-15","category":"Subscriptions"}
-{"account_id":"A006","description":"Supermarket","amount":-52.10,"type":"debit","date":"2026-04-20","category":"Groceries"}
-{"account_id":"A006","description":"Pension","amount":1200.00,"type":"credit","date":"2026-05-01","category":"Incoming Salary"}
-{"account_id":"A006","description":"Deliveroo Plus","amount":-11.99,"type":"debit","date":"2026-05-01","category":"Subscriptions"}
-{"account_id":"A006","description":"Disney+","amount":-10.99,"type":"debit","date":"2026-05-02","category":"Subscriptions"}
-{"account_id":"A006","description":"Netflix","amount":-15.99,"type":"debit","date":"2026-05-03","category":"Subscriptions"}
-{"account_id":"A006","description":"Spotify Premium","amount":-10.99,"type":"debit","date":"2026-05-03","category":"Subscriptions"}
-{"account_id":"A006","description":"Apple Music","amount":-10.99,"type":"debit","date":"2026-05-04","category":"Subscriptions"}
-{"account_id":"A006","description":"Amazon Prime","amount":-8.99,"type":"debit","date":"2026-05-04","category":"Subscriptions"}
-{"account_id":"A006","description":"Deliveroo Order","amount":-31.20,"type":"debit","date":"2026-05-10","category":"Subscriptions"}
-{"account_id":"A006","description":"Deliveroo Order","amount":-26.80,"type":"debit","date":"2026-05-18","category":"Subscriptions"}
-{"account_id":"A006","description":"Gym Membership","amount":-35.00,"type":"debit","date":"2026-05-15","category":"Subscriptions"}
-{"account_id":"A006","description":"Pension","amount":1200.00,"type":"credit","date":"2026-06-01","category":"Incoming Salary"}
-{"account_id":"A006","description":"Deliveroo Plus","amount":-11.99,"type":"debit","date":"2026-06-01","category":"Subscriptions"}
-{"account_id":"A006","description":"Disney+","amount":-10.99,"type":"debit","date":"2026-06-02","category":"Subscriptions"}
-{"account_id":"A006","description":"Netflix","amount":-15.99,"type":"debit","date":"2026-06-03","category":"Subscriptions"}
-{"account_id":"A006","description":"Spotify Premium","amount":-10.99,"type":"debit","date":"2026-06-03","category":"Subscriptions"}
-{"account_id":"A006","description":"Amazon Prime","amount":-8.99,"type":"debit","date":"2026-06-04","category":"Subscriptions"}
-{"account_id":"A006","description":"Deliveroo Order","amount":-33.50,"type":"debit","date":"2026-06-08","category":"Subscriptions"}
-{"account_id":"A006","description":"Supermarket","amount":-67.30,"type":"debit","date":"2026-06-09","category":"Groceries"}
-{"account_id":"A006","description":"Deliveroo Order","amount":-28.70,"type":"debit","date":"2026-06-15","category":"Subscriptions"}
-{"account_id":"A006","description":"Gym Membership","amount":-35.00,"type":"debit","date":"2026-06-15","category":"Subscriptions"}
-{"account_id":"A008","description":"Salary - EDB Corp","amount":4500.00,"type":"credit","date":"2025-07-01","category":"Incoming Salary"}
-{"account_id":"A008","description":"Mortgage Payment","amount":-1200.00,"type":"debit","date":"2025-07-03","category":"Rent"}
-{"account_id":"A008","description":"Waitrose","amount":-78.50,"type":"debit","date":"2025-07-10","category":"Groceries"}
-{"account_id":"A008","description":"British Airways","amount":-450.00,"type":"debit","date":"2025-07-22","category":"Travel"}
-{"account_id":"A008","description":"Salary - EDB Corp","amount":4500.00,"type":"credit","date":"2025-08-01","category":"Incoming Salary"}
-{"account_id":"A008","description":"Mortgage Payment","amount":-1200.00,"type":"debit","date":"2025-08-03","category":"Rent"}
-{"account_id":"A008","description":"Council Tax","amount":-198.00,"type":"debit","date":"2025-08-10","category":"Tax"}
-{"account_id":"A008","description":"Salary - EDB Corp","amount":4500.00,"type":"credit","date":"2025-09-01","category":"Incoming Salary"}
-{"account_id":"A008","description":"Mortgage Payment","amount":-1200.00,"type":"debit","date":"2025-09-03","category":"Rent"}
-{"account_id":"A008","description":"Tesco","amount":-65.30,"type":"debit","date":"2025-09-08","category":"Groceries"}
-{"account_id":"A008","description":"Amazon Prime","amount":-8.99,"type":"debit","date":"2025-09-10","category":"Subscriptions"}
-{"account_id":"A008","description":"Salary - EDB Corp","amount":4500.00,"type":"credit","date":"2025-10-01","category":"Incoming Salary"}
-{"account_id":"A008","description":"Mortgage Payment","amount":-1200.00,"type":"debit","date":"2025-10-03","category":"Rent"}
-{"account_id":"A008","description":"Booking.com Hotel","amount":-320.00,"type":"debit","date":"2025-10-15","category":"Travel"}
-{"account_id":"A008","description":"Salary - EDB Corp","amount":4500.00,"type":"credit","date":"2025-11-01","category":"Incoming Salary"}
-{"account_id":"A008","description":"Mortgage Payment","amount":-1200.00,"type":"debit","date":"2025-11-03","category":"Rent"}
-{"account_id":"A008","description":"Sainsbury's","amount":-72.40,"type":"debit","date":"2025-11-12","category":"Groceries"}
-{"account_id":"A008","description":"Salary - EDB Corp","amount":4500.00,"type":"credit","date":"2025-12-01","category":"Incoming Salary"}
-{"account_id":"A008","description":"Mortgage Payment","amount":-1200.00,"type":"debit","date":"2025-12-03","category":"Rent"}
-{"account_id":"A008","description":"Council Tax","amount":-198.00,"type":"debit","date":"2025-12-10","category":"Tax"}
-{"account_id":"A008","description":"Salary - EDB Corp","amount":4500.00,"type":"credit","date":"2026-01-01","category":"Incoming Salary"}
-{"account_id":"A008","description":"Mortgage Payment","amount":-1200.00,"type":"debit","date":"2026-01-03","category":"Rent"}
-{"account_id":"A008","description":"Tesco","amount":-58.90,"type":"debit","date":"2026-01-08","category":"Groceries"}
-{"account_id":"A008","description":"Salary - EDB Corp","amount":4500.00,"type":"credit","date":"2026-02-01","category":"Incoming Salary"}
-{"account_id":"A008","description":"Mortgage Payment","amount":-1200.00,"type":"debit","date":"2026-02-03","category":"Rent"}
-{"account_id":"A008","description":"Shell Fuel","amount":-62.00,"type":"debit","date":"2026-02-15","category":"Travel"}
-{"account_id":"A008","description":"Salary - EDB Corp","amount":4500.00,"type":"credit","date":"2026-03-01","category":"Incoming Salary"}
-{"account_id":"A008","description":"Mortgage Payment","amount":-1200.00,"type":"debit","date":"2026-03-03","category":"Rent"}
-{"account_id":"A008","description":"Waitrose","amount":-85.20,"type":"debit","date":"2026-03-10","category":"Groceries"}
-{"account_id":"A008","description":"Salary - EDB Corp","amount":4500.00,"type":"credit","date":"2026-04-01","category":"Incoming Salary"}
-{"account_id":"A008","description":"Mortgage Payment","amount":-1200.00,"type":"debit","date":"2026-04-03","category":"Rent"}
-{"account_id":"A008","description":"Council Tax","amount":-198.00,"type":"debit","date":"2026-04-10","category":"Tax"}
-{"account_id":"A008","description":"Salary - EDB Corp","amount":4500.00,"type":"credit","date":"2026-05-01","category":"Incoming Salary"}
-{"account_id":"A008","description":"Mortgage Payment","amount":-1200.00,"type":"debit","date":"2026-05-03","category":"Rent"}
-{"account_id":"A008","description":"Holiday Booking","amount":-850.00,"type":"debit","date":"2026-05-22","category":"Travel"}
-{"account_id":"A008","description":"Salary - EDB Corp","amount":4500.00,"type":"credit","date":"2026-06-01","category":"Incoming Salary"}
-{"account_id":"A008","description":"Mortgage Payment","amount":-1200.00,"type":"debit","date":"2026-06-03","category":"Rent"}
-{"account_id":"A008","description":"Petrol","amount":-55.00,"type":"debit","date":"2026-06-18","category":"Travel"}
-{"account_id":"A009","description":"ISA Transfer","amount":500.00,"type":"credit","date":"2025-07-01","category":"Incoming Salary"}
-{"account_id":"A009","description":"ISA Interest","amount":18.50,"type":"credit","date":"2025-10-01","category":"Interest"}
-{"account_id":"A009","description":"ISA Transfer","amount":500.00,"type":"credit","date":"2026-01-01","category":"Incoming Salary"}
-{"account_id":"A009","description":"ISA Interest","amount":19.20,"type":"credit","date":"2026-04-01","category":"Interest"}
-{"account_id":"A009","description":"ISA Transfer","amount":500.00,"type":"credit","date":"2026-06-01","category":"Incoming Salary"}
+{
+    "account_id": "A001",
+    "description": "Salary - Acme Corp",
+    "amount": 3200.0,
+    "type": "credit",
+    "date": "2025-07-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A002",
+    "description": "Interest Payment",
+    "amount": 24.5,
+    "type": "credit",
+    "date": "2025-07-01",
+    "category": "Interest"
+}
+{
+    "account_id": "A003",
+    "description": "Payroll - City Council",
+    "amount": 2800.0,
+    "type": "credit",
+    "date": "2025-07-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A003",
+    "description": "eBay Purchase",
+    "amount": -23.88,
+    "type": "debit",
+    "date": "2025-07-01",
+    "category": "Others"
+}
+{
+    "account_id": "A005",
+    "description": "Rent",
+    "amount": -950.0,
+    "type": "debit",
+    "date": "2025-07-01",
+    "category": "Rent"
+}
+{
+    "account_id": "A006",
+    "description": "Pension",
+    "amount": 1200.0,
+    "type": "credit",
+    "date": "2025-07-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A006",
+    "description": "Deliveroo Plus",
+    "amount": -11.99,
+    "type": "debit",
+    "date": "2025-07-01",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A008",
+    "description": "Salary - EDB Corp",
+    "amount": 4500.0,
+    "type": "credit",
+    "date": "2025-07-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A009",
+    "description": "ISA Transfer",
+    "amount": 500.0,
+    "type": "credit",
+    "date": "2025-07-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A001",
+    "description": "H&M",
+    "amount": -34.23,
+    "type": "debit",
+    "date": "2025-07-02",
+    "category": "Others"
+}
+{
+    "account_id": "A006",
+    "description": "Disney+",
+    "amount": -10.99,
+    "type": "debit",
+    "date": "2025-07-02",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "Netflix",
+    "amount": -15.99,
+    "type": "debit",
+    "date": "2025-07-03",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "Spotify Premium",
+    "amount": -10.99,
+    "type": "debit",
+    "date": "2025-07-03",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A008",
+    "description": "Mortgage Payment",
+    "amount": -1200.0,
+    "type": "debit",
+    "date": "2025-07-03",
+    "category": "Rent"
+}
+{
+    "account_id": "A006",
+    "description": "Amazon Prime",
+    "amount": -8.99,
+    "type": "debit",
+    "date": "2025-07-04",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A008",
+    "description": "LNER Train Ticket",
+    "amount": -74.44,
+    "type": "debit",
+    "date": "2025-07-04",
+    "category": "Travel"
+}
+{
+    "account_id": "A001",
+    "description": "Tecso Weekly Shop",
+    "amount": -52.3,
+    "type": "debit",
+    "date": "2025-07-05",
+    "category": "Groceries"
+}
+{
+    "account_id": "A001",
+    "description": "Hotstar",
+    "amount": -10.0,
+    "type": "debit",
+    "date": "2025-07-05",
+    "category": "Groceries"
+}
+{
+    "account_id": "A001",
+    "description": "Start health insurance",
+    "amount": -10.0,
+    "type": "debit",
+    "date": "2025-07-05",
+    "category": "Groceries"
+}
+{
+    "account_id": "A005",
+    "description": "H&M",
+    "amount": -58.76,
+    "type": "debit",
+    "date": "2025-07-05",
+    "category": "Others"
+}
+{
+    "account_id": "A006",
+    "description": "eBay Seller Fees",
+    "amount": -4.55,
+    "type": "debit",
+    "date": "2025-07-05",
+    "category": "Others"
+}
+{
+    "account_id": "A008",
+    "description": "Gym Membership",
+    "amount": -39.0,
+    "type": "debit",
+    "date": "2025-07-05",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "Deliveroo Order",
+    "amount": -24.5,
+    "type": "debit",
+    "date": "2025-07-06",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A003",
+    "description": "H&M",
+    "amount": -48.16,
+    "type": "debit",
+    "date": "2025-07-07",
+    "category": "Others"
+}
+{
+    "account_id": "A001",
+    "description": "Amazon prime Monthly",
+    "amount": -15.99,
+    "type": "debit",
+    "date": "2025-07-08",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A003",
+    "description": "Coffee Shop",
+    "amount": -4.75,
+    "type": "debit",
+    "date": "2025-07-08",
+    "category": "Others"
+}
+{
+    "account_id": "A006",
+    "description": "Deliveroo Order",
+    "amount": -31.8,
+    "type": "debit",
+    "date": "2025-07-09",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A001",
+    "description": "Council Tax",
+    "amount": -145.0,
+    "type": "debit",
+    "date": "2025-07-10",
+    "category": "Tax"
+}
+{
+    "account_id": "A005",
+    "description": "Freelance Invoice",
+    "amount": 1500.0,
+    "type": "credit",
+    "date": "2025-07-10",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A005",
+    "description": "Regular Savings Transfer",
+    "amount": -100.0,
+    "type": "debit",
+    "date": "2025-07-10",
+    "category": "Others"
+}
+{
+    "account_id": "A008",
+    "description": "Waitrose",
+    "amount": -78.5,
+    "type": "debit",
+    "date": "2025-07-10",
+    "category": "Groceries"
+}
+{
+    "account_id": "A001",
+    "description": "Corner Shop Sweets",
+    "amount": -2.21,
+    "type": "debit",
+    "date": "2025-07-11",
+    "category": "Others"
+}
+{
+    "account_id": "A005",
+    "description": "Aldi",
+    "amount": -29.5,
+    "type": "debit",
+    "date": "2025-07-12",
+    "category": "Groceries"
+}
+{
+    "account_id": "A006",
+    "description": "Deliveroo Order",
+    "amount": -18.9,
+    "type": "debit",
+    "date": "2025-07-12",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A001",
+    "description": "Amazon Prime Video",
+    "amount": -8.99,
+    "type": "debit",
+    "date": "2025-07-13",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A001",
+    "description": "TfL Oyster Top-Up",
+    "amount": -40.0,
+    "type": "debit",
+    "date": "2025-07-14",
+    "category": "Travel"
+}
+{
+    "account_id": "A003",
+    "description": "Council Tax",
+    "amount": -145.0,
+    "type": "debit",
+    "date": "2025-07-15",
+    "category": "Tax"
+}
+{
+    "account_id": "A003",
+    "description": "Trainline Ticket",
+    "amount": -43.57,
+    "type": "debit",
+    "date": "2025-07-15",
+    "category": "Travel"
+}
+{
+    "account_id": "A006",
+    "description": "Tesco",
+    "amount": -34.2,
+    "type": "debit",
+    "date": "2025-07-15",
+    "category": "Groceries"
+}
+{
+    "account_id": "A006",
+    "description": "Deliveroo Order",
+    "amount": -27.4,
+    "type": "debit",
+    "date": "2025-07-18",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A001",
+    "description": "Electricity Bill",
+    "amount": -82.5,
+    "type": "debit",
+    "date": "2025-07-20",
+    "category": "Others"
+}
+{
+    "account_id": "A003",
+    "description": "Tesco",
+    "amount": -38.5,
+    "type": "debit",
+    "date": "2025-07-20",
+    "category": "Groceries"
+}
+{
+    "account_id": "A003",
+    "description": "Co-op Food",
+    "amount": -7.36,
+    "type": "debit",
+    "date": "2025-07-20",
+    "category": "Groceries"
+}
+{
+    "account_id": "A005",
+    "description": "Amazon Retail",
+    "amount": -19.48,
+    "type": "debit",
+    "date": "2025-07-20",
+    "category": "Others"
+}
+{
+    "account_id": "A006",
+    "description": "Supermarket",
+    "amount": -67.3,
+    "type": "debit",
+    "date": "2025-07-22",
+    "category": "Groceries"
+}
+{
+    "account_id": "A008",
+    "description": "British Airways",
+    "amount": -450.0,
+    "type": "debit",
+    "date": "2025-07-22",
+    "category": "Travel"
+}
+{
+    "account_id": "A001",
+    "description": "Trainline Ticket",
+    "amount": -47.16,
+    "type": "debit",
+    "date": "2025-07-23",
+    "category": "Travel"
+}
+{
+    "account_id": "A001",
+    "description": "GWR Railway Ticket",
+    "amount": -21.93,
+    "type": "debit",
+    "date": "2025-07-23",
+    "category": "Travel"
+}
+{
+    "account_id": "A005",
+    "description": "eBay Purchase",
+    "amount": -42.05,
+    "type": "debit",
+    "date": "2025-07-27",
+    "category": "Others"
+}
+{
+    "account_id": "A006",
+    "description": "GWR Railway Ticket",
+    "amount": -27.31,
+    "type": "debit",
+    "date": "2025-07-28",
+    "category": "Travel"
+}
+{
+    "account_id": "A008",
+    "description": "Lidl Supermarket",
+    "amount": -51.44,
+    "type": "debit",
+    "date": "2025-07-29",
+    "category": "Groceries"
+}
+{
+    "account_id": "A006",
+    "description": "Caff\u00e8 Nero",
+    "amount": -4.0,
+    "type": "debit",
+    "date": "2025-07-30",
+    "category": "Others"
+}
+{
+    "account_id": "A008",
+    "description": "Tesco Express",
+    "amount": -22.59,
+    "type": "debit",
+    "date": "2025-07-31",
+    "category": "Groceries"
+}
+{
+    "account_id": "A001",
+    "description": "Salary - Acme Corp",
+    "amount": 3200.0,
+    "type": "credit",
+    "date": "2025-08-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A003",
+    "description": "Payroll - City Council",
+    "amount": 2800.0,
+    "type": "credit",
+    "date": "2025-08-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A005",
+    "description": "Rent",
+    "amount": -950.0,
+    "type": "debit",
+    "date": "2025-08-01",
+    "category": "Rent"
+}
+{
+    "account_id": "A006",
+    "description": "Pension",
+    "amount": 1200.0,
+    "type": "credit",
+    "date": "2025-08-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A006",
+    "description": "Deliveroo Plus",
+    "amount": -11.99,
+    "type": "debit",
+    "date": "2025-08-01",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A008",
+    "description": "Salary - EDB Corp",
+    "amount": 4500.0,
+    "type": "credit",
+    "date": "2025-08-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A006",
+    "description": "Disney+",
+    "amount": -10.99,
+    "type": "debit",
+    "date": "2025-08-02",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A001",
+    "description": "Aldi Grocery",
+    "amount": -23.86,
+    "type": "debit",
+    "date": "2025-08-03",
+    "category": "Groceries"
+}
+{
+    "account_id": "A006",
+    "description": "Netflix",
+    "amount": -15.99,
+    "type": "debit",
+    "date": "2025-08-03",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "Spotify Premium",
+    "amount": -10.99,
+    "type": "debit",
+    "date": "2025-08-03",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A008",
+    "description": "Mortgage Payment",
+    "amount": -1200.0,
+    "type": "debit",
+    "date": "2025-08-03",
+    "category": "Rent"
+}
+{
+    "account_id": "A001",
+    "description": "Sainsbury's",
+    "amount": -47.85,
+    "type": "debit",
+    "date": "2025-08-04",
+    "category": "Groceries"
+}
+{
+    "account_id": "A006",
+    "description": "Apple Music",
+    "amount": -10.99,
+    "type": "debit",
+    "date": "2025-08-04",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "Amazon Prime",
+    "amount": -8.99,
+    "type": "debit",
+    "date": "2025-08-04",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A001",
+    "description": "Audible",
+    "amount": -7.99,
+    "type": "debit",
+    "date": "2025-08-05",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A003",
+    "description": "Amazon Marketplace",
+    "amount": -36.56,
+    "type": "debit",
+    "date": "2025-08-05",
+    "category": "Others"
+}
+{
+    "account_id": "A008",
+    "description": "Caff\u00e8 Nero",
+    "amount": -4.02,
+    "type": "debit",
+    "date": "2025-08-05",
+    "category": "Others"
+}
+{
+    "account_id": "A008",
+    "description": "Spotify Family",
+    "amount": -19.99,
+    "type": "debit",
+    "date": "2025-08-05",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A003",
+    "description": "Starbucks Coffee",
+    "amount": -6.31,
+    "type": "debit",
+    "date": "2025-08-06",
+    "category": "Others"
+}
+{
+    "account_id": "A001",
+    "description": "Netflix Monthly",
+    "amount": -15.99,
+    "type": "debit",
+    "date": "2025-08-08",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A003",
+    "description": "Sainsbury's Local",
+    "amount": -33.75,
+    "type": "debit",
+    "date": "2025-08-08",
+    "category": "Groceries"
+}
+{
+    "account_id": "A006",
+    "description": "Deliveroo Order",
+    "amount": -22.5,
+    "type": "debit",
+    "date": "2025-08-08",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "ISA Investment",
+    "amount": -150.0,
+    "type": "debit",
+    "date": "2025-08-08",
+    "category": "Others"
+}
+{
+    "account_id": "A001",
+    "description": "Council Tax",
+    "amount": -145.0,
+    "type": "debit",
+    "date": "2025-08-10",
+    "category": "Tax"
+}
+{
+    "account_id": "A005",
+    "description": "Sainsbury's Local",
+    "amount": -33.84,
+    "type": "debit",
+    "date": "2025-08-10",
+    "category": "Groceries"
+}
+{
+    "account_id": "A008",
+    "description": "Council Tax",
+    "amount": -198.0,
+    "type": "debit",
+    "date": "2025-08-10",
+    "category": "Tax"
+}
+{
+    "account_id": "A003",
+    "description": "Lidl Supermarket",
+    "amount": -53.47,
+    "type": "debit",
+    "date": "2025-08-11",
+    "category": "Groceries"
+}
+{
+    "account_id": "A003",
+    "description": "Online Retailer",
+    "amount": -27.99,
+    "type": "debit",
+    "date": "2025-08-12",
+    "category": "Others"
+}
+{
+    "account_id": "A003",
+    "description": "Pret A Manger",
+    "amount": -9.08,
+    "type": "debit",
+    "date": "2025-08-13",
+    "category": "Others"
+}
+{
+    "account_id": "A005",
+    "description": "ASOS Fashion",
+    "amount": -107.83,
+    "type": "debit",
+    "date": "2025-08-13",
+    "category": "Others"
+}
+{
+    "account_id": "A001",
+    "description": "Gym Membership",
+    "amount": -39.0,
+    "type": "debit",
+    "date": "2025-08-14",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "Deliveroo Order",
+    "amount": -35.6,
+    "type": "debit",
+    "date": "2025-08-14",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A001",
+    "description": "Uber",
+    "amount": -18.5,
+    "type": "debit",
+    "date": "2025-08-15",
+    "category": "Travel"
+}
+{
+    "account_id": "A005",
+    "description": "Freelance Invoice",
+    "amount": 1800.0,
+    "type": "credit",
+    "date": "2025-08-15",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A006",
+    "description": "Gym Membership",
+    "amount": -35.0,
+    "type": "debit",
+    "date": "2025-08-15",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "Vending Machine",
+    "amount": -1.11,
+    "type": "debit",
+    "date": "2025-08-15",
+    "category": "Others"
+}
+{
+    "account_id": "A006",
+    "description": "Stagecoach Bus Pass",
+    "amount": -16.35,
+    "type": "debit",
+    "date": "2025-08-16",
+    "category": "Travel"
+}
+{
+    "account_id": "A006",
+    "description": "Caff\u00e8 Nero",
+    "amount": -5.51,
+    "type": "debit",
+    "date": "2025-08-16",
+    "category": "Others"
+}
+{
+    "account_id": "A008",
+    "description": "Shell Fuel",
+    "amount": -57.52,
+    "type": "debit",
+    "date": "2025-08-16",
+    "category": "Travel"
+}
+{
+    "account_id": "A005",
+    "description": "Apple Store MacBook",
+    "amount": -1249.0,
+    "type": "debit",
+    "date": "2025-08-19",
+    "category": "Others"
+}
+{
+    "account_id": "A006",
+    "description": "Deliveroo Order",
+    "amount": -19.8,
+    "type": "debit",
+    "date": "2025-08-20",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A008",
+    "description": "ASOS Fashion",
+    "amount": -108.91,
+    "type": "debit",
+    "date": "2025-08-20",
+    "category": "Others"
+}
+{
+    "account_id": "A001",
+    "description": "Pret A Manger",
+    "amount": -6.4,
+    "type": "debit",
+    "date": "2025-08-21",
+    "category": "Others"
+}
+{
+    "account_id": "A003",
+    "description": "Newspaper Kiosk",
+    "amount": -2.95,
+    "type": "debit",
+    "date": "2025-08-21",
+    "category": "Others"
+}
+{
+    "account_id": "A001",
+    "description": "Mobile Phone Bill",
+    "amount": -28.0,
+    "type": "debit",
+    "date": "2025-08-22",
+    "category": "Others"
+}
+{
+    "account_id": "A003",
+    "description": "YouTube Premium",
+    "amount": -12.99,
+    "type": "debit",
+    "date": "2025-08-22",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "Lidl Supermarket",
+    "amount": -30.33,
+    "type": "debit",
+    "date": "2025-08-23",
+    "category": "Groceries"
+}
+{
+    "account_id": "A003",
+    "description": "Car Repair Shop",
+    "amount": -380.0,
+    "type": "debit",
+    "date": "2025-08-24",
+    "category": "Others"
+}
+{
+    "account_id": "A005",
+    "description": "Local Espresso Bar",
+    "amount": -4.81,
+    "type": "debit",
+    "date": "2025-08-24",
+    "category": "Others"
+}
+{
+    "account_id": "A001",
+    "description": "Caff\u00e8 Nero",
+    "amount": -5.71,
+    "type": "debit",
+    "date": "2025-08-25",
+    "category": "Others"
+}
+{
+    "account_id": "A005",
+    "description": "Gym Membership",
+    "amount": -35.0,
+    "type": "debit",
+    "date": "2025-08-25",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "Aldi",
+    "amount": -28.5,
+    "type": "debit",
+    "date": "2025-08-25",
+    "category": "Groceries"
+}
+{
+    "account_id": "A008",
+    "description": "Costa Coffee",
+    "amount": -4.47,
+    "type": "debit",
+    "date": "2025-08-28",
+    "category": "Others"
+}
+{
+    "account_id": "A001",
+    "description": "Salary - Acme Corp",
+    "amount": 3200.0,
+    "type": "credit",
+    "date": "2025-09-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A003",
+    "description": "Payroll - City Council",
+    "amount": 2800.0,
+    "type": "credit",
+    "date": "2025-09-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A005",
+    "description": "Rent",
+    "amount": -950.0,
+    "type": "debit",
+    "date": "2025-09-01",
+    "category": "Rent"
+}
+{
+    "account_id": "A006",
+    "description": "Pension",
+    "amount": 1200.0,
+    "type": "credit",
+    "date": "2025-09-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A006",
+    "description": "Deliveroo Plus",
+    "amount": -11.99,
+    "type": "debit",
+    "date": "2025-09-01",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A008",
+    "description": "Salary - EDB Corp",
+    "amount": 4500.0,
+    "type": "credit",
+    "date": "2025-09-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A006",
+    "description": "Disney+",
+    "amount": -10.99,
+    "type": "debit",
+    "date": "2025-09-02",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "Netflix",
+    "amount": -15.99,
+    "type": "debit",
+    "date": "2025-09-03",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "Spotify Premium",
+    "amount": -10.99,
+    "type": "debit",
+    "date": "2025-09-03",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A008",
+    "description": "Mortgage Payment",
+    "amount": -1200.0,
+    "type": "debit",
+    "date": "2025-09-03",
+    "category": "Rent"
+}
+{
+    "account_id": "A006",
+    "description": "Apple Music",
+    "amount": -10.99,
+    "type": "debit",
+    "date": "2025-09-04",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "Amazon Prime",
+    "amount": -8.99,
+    "type": "debit",
+    "date": "2025-09-04",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A001",
+    "description": "Aldi Weekly",
+    "amount": -38.9,
+    "type": "debit",
+    "date": "2025-09-06",
+    "category": "Groceries"
+}
+{
+    "account_id": "A005",
+    "description": "Aldi Grocery",
+    "amount": -26.56,
+    "type": "debit",
+    "date": "2025-09-06",
+    "category": "Groceries"
+}
+{
+    "account_id": "A008",
+    "description": "Co-op Food",
+    "amount": -7.3,
+    "type": "debit",
+    "date": "2025-09-07",
+    "category": "Groceries"
+}
+{
+    "account_id": "A001",
+    "description": "Netflix Monthly",
+    "amount": -15.99,
+    "type": "debit",
+    "date": "2025-09-08",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A001",
+    "description": "Spotify Premium",
+    "amount": -10.99,
+    "type": "debit",
+    "date": "2025-09-08",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A008",
+    "description": "Tesco",
+    "amount": -65.3,
+    "type": "debit",
+    "date": "2025-09-08",
+    "category": "Groceries"
+}
+{
+    "account_id": "A001",
+    "description": "Council Tax",
+    "amount": -145.0,
+    "type": "debit",
+    "date": "2025-09-10",
+    "category": "Tax"
+}
+{
+    "account_id": "A001",
+    "description": "Caff\u00e8 Nero",
+    "amount": -4.08,
+    "type": "debit",
+    "date": "2025-09-10",
+    "category": "Others"
+}
+{
+    "account_id": "A003",
+    "description": "Aldi",
+    "amount": -32.4,
+    "type": "debit",
+    "date": "2025-09-10",
+    "category": "Groceries"
+}
+{
+    "account_id": "A006",
+    "description": "Deliveroo Order",
+    "amount": -28.9,
+    "type": "debit",
+    "date": "2025-09-10",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A008",
+    "description": "Amazon Prime",
+    "amount": -8.99,
+    "type": "debit",
+    "date": "2025-09-10",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "Local Espresso Bar",
+    "amount": -2.84,
+    "type": "debit",
+    "date": "2025-09-12",
+    "category": "Others"
+}
+{
+    "account_id": "A005",
+    "description": "Trainline",
+    "amount": -55.0,
+    "type": "debit",
+    "date": "2025-09-14",
+    "category": "Travel"
+}
+{
+    "account_id": "A006",
+    "description": "Gym Membership",
+    "amount": -35.0,
+    "type": "debit",
+    "date": "2025-09-15",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A008",
+    "description": "Zara Store",
+    "amount": -88.74,
+    "type": "debit",
+    "date": "2025-09-15",
+    "category": "Others"
+}
+{
+    "account_id": "A006",
+    "description": "Deliveroo Order",
+    "amount": -33.2,
+    "type": "debit",
+    "date": "2025-09-16",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A001",
+    "description": "TfL Bus Fare",
+    "amount": -1.97,
+    "type": "debit",
+    "date": "2025-09-17",
+    "category": "Travel"
+}
+{
+    "account_id": "A001",
+    "description": "National Rail",
+    "amount": -65.0,
+    "type": "debit",
+    "date": "2025-09-18",
+    "category": "Travel"
+}
+{
+    "account_id": "A005",
+    "description": "Starbucks Coffee",
+    "amount": -5.94,
+    "type": "debit",
+    "date": "2025-09-18",
+    "category": "Others"
+}
+{
+    "account_id": "A005",
+    "description": "Postage Stamps",
+    "amount": -7.44,
+    "type": "debit",
+    "date": "2025-09-18",
+    "category": "Others"
+}
+{
+    "account_id": "A003",
+    "description": "eBay Purchase",
+    "amount": -33.14,
+    "type": "debit",
+    "date": "2025-09-19",
+    "category": "Others"
+}
+{
+    "account_id": "A005",
+    "description": "Freelance Invoice",
+    "amount": 1200.0,
+    "type": "credit",
+    "date": "2025-09-20",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A006",
+    "description": "Pret A Manger",
+    "amount": -8.43,
+    "type": "debit",
+    "date": "2025-09-20",
+    "category": "Others"
+}
+{
+    "account_id": "A003",
+    "description": "National Rail",
+    "amount": -42.0,
+    "type": "debit",
+    "date": "2025-09-22",
+    "category": "Travel"
+}
+{
+    "account_id": "A003",
+    "description": "Zara Store",
+    "amount": -116.18,
+    "type": "debit",
+    "date": "2025-09-22",
+    "category": "Others"
+}
+{
+    "account_id": "A006",
+    "description": "Deliveroo Order",
+    "amount": -21.5,
+    "type": "debit",
+    "date": "2025-09-22",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "Co-op Food",
+    "amount": -17.32,
+    "type": "debit",
+    "date": "2025-09-22",
+    "category": "Groceries"
+}
+{
+    "account_id": "A006",
+    "description": "Co-op Food",
+    "amount": -16.83,
+    "type": "debit",
+    "date": "2025-09-23",
+    "category": "Groceries"
+}
+{
+    "account_id": "A008",
+    "description": "Uber Trip",
+    "amount": -14.83,
+    "type": "debit",
+    "date": "2025-09-26",
+    "category": "Travel"
+}
+{
+    "account_id": "A001",
+    "description": "Salary - Acme Corp",
+    "amount": 3200.0,
+    "type": "credit",
+    "date": "2025-10-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A002",
+    "description": "Savings Interest",
+    "amount": 24.5,
+    "type": "credit",
+    "date": "2025-10-01",
+    "category": "Interest"
+}
+{
+    "account_id": "A003",
+    "description": "Payroll - City Council",
+    "amount": 2800.0,
+    "type": "credit",
+    "date": "2025-10-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A005",
+    "description": "Rent",
+    "amount": -950.0,
+    "type": "debit",
+    "date": "2025-10-01",
+    "category": "Rent"
+}
+{
+    "account_id": "A006",
+    "description": "Pension",
+    "amount": 1200.0,
+    "type": "credit",
+    "date": "2025-10-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A006",
+    "description": "Deliveroo Plus",
+    "amount": -11.99,
+    "type": "debit",
+    "date": "2025-10-01",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A008",
+    "description": "Salary - EDB Corp",
+    "amount": 4500.0,
+    "type": "credit",
+    "date": "2025-10-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A008",
+    "description": "Disney+ Monthly",
+    "amount": -10.99,
+    "type": "debit",
+    "date": "2025-10-01",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A009",
+    "description": "ISA Interest",
+    "amount": 18.5,
+    "type": "credit",
+    "date": "2025-10-01",
+    "category": "Interest"
+}
+{
+    "account_id": "A006",
+    "description": "Disney+",
+    "amount": -10.99,
+    "type": "debit",
+    "date": "2025-10-02",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "Aldi Grocery",
+    "amount": -56.25,
+    "type": "debit",
+    "date": "2025-10-02",
+    "category": "Groceries"
+}
+{
+    "account_id": "A001",
+    "description": "Waitrose",
+    "amount": -63.2,
+    "type": "debit",
+    "date": "2025-10-03",
+    "category": "Groceries"
+}
+{
+    "account_id": "A006",
+    "description": "Netflix",
+    "amount": -15.99,
+    "type": "debit",
+    "date": "2025-10-03",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A008",
+    "description": "Mortgage Payment",
+    "amount": -1200.0,
+    "type": "debit",
+    "date": "2025-10-03",
+    "category": "Rent"
+}
+{
+    "account_id": "A008",
+    "description": "Aldi Grocery",
+    "amount": -38.2,
+    "type": "debit",
+    "date": "2025-10-03",
+    "category": "Groceries"
+}
+{
+    "account_id": "A003",
+    "description": "Pret A Manger",
+    "amount": -5.31,
+    "type": "debit",
+    "date": "2025-10-04",
+    "category": "Others"
+}
+{
+    "account_id": "A005",
+    "description": "Freelance Invoice",
+    "amount": 2100.0,
+    "type": "credit",
+    "date": "2025-10-05",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A006",
+    "description": "Aldi Grocery",
+    "amount": -54.34,
+    "type": "debit",
+    "date": "2025-10-06",
+    "category": "Groceries"
+}
+{
+    "account_id": "A006",
+    "description": "Lidl Supermarket",
+    "amount": -26.67,
+    "type": "debit",
+    "date": "2025-10-07",
+    "category": "Groceries"
+}
+{
+    "account_id": "A001",
+    "description": "Netflix Monthly",
+    "amount": -15.99,
+    "type": "debit",
+    "date": "2025-10-08",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A005",
+    "description": "Spotify Premium",
+    "amount": -10.99,
+    "type": "debit",
+    "date": "2025-10-08",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "Deliveroo Order",
+    "amount": -26.8,
+    "type": "debit",
+    "date": "2025-10-08",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "Pet Insurance",
+    "amount": -15.2,
+    "type": "debit",
+    "date": "2025-10-08",
+    "category": "Others"
+}
+{
+    "account_id": "A001",
+    "description": "Council Tax",
+    "amount": -145.0,
+    "type": "debit",
+    "date": "2025-10-10",
+    "category": "Tax"
+}
+{
+    "account_id": "A005",
+    "description": "Sainsbury's Local",
+    "amount": -29.69,
+    "type": "debit",
+    "date": "2025-10-13",
+    "category": "Groceries"
+}
+{
+    "account_id": "A008",
+    "description": "Postage Stamps",
+    "amount": -6.45,
+    "type": "debit",
+    "date": "2025-10-13",
+    "category": "Others"
+}
+{
+    "account_id": "A003",
+    "description": "Council Tax",
+    "amount": -145.0,
+    "type": "debit",
+    "date": "2025-10-15",
+    "category": "Tax"
+}
+{
+    "account_id": "A006",
+    "description": "Deliveroo Order",
+    "amount": -38.4,
+    "type": "debit",
+    "date": "2025-10-15",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "Gym Membership",
+    "amount": -35.0,
+    "type": "debit",
+    "date": "2025-10-15",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A008",
+    "description": "Booking.com Hotel",
+    "amount": -320.0,
+    "type": "debit",
+    "date": "2025-10-15",
+    "category": "Travel"
+}
+{
+    "account_id": "A003",
+    "description": "Waitrose & Partners",
+    "amount": -54.37,
+    "type": "debit",
+    "date": "2025-10-17",
+    "category": "Groceries"
+}
+{
+    "account_id": "A003",
+    "description": "Local Espresso Bar",
+    "amount": -4.5,
+    "type": "debit",
+    "date": "2025-10-18",
+    "category": "Others"
+}
+{
+    "account_id": "A001",
+    "description": "Corner Shop Sweets",
+    "amount": -3.46,
+    "type": "debit",
+    "date": "2025-10-24",
+    "category": "Others"
+}
+{
+    "account_id": "A001",
+    "description": "TfL Bus Fare",
+    "amount": -1.52,
+    "type": "debit",
+    "date": "2025-10-24",
+    "category": "Travel"
+}
+{
+    "account_id": "A005",
+    "description": "ASOS Fashion",
+    "amount": -59.22,
+    "type": "debit",
+    "date": "2025-10-24",
+    "category": "Others"
+}
+{
+    "account_id": "A006",
+    "description": "Aldi Grocery",
+    "amount": -34.21,
+    "type": "debit",
+    "date": "2025-10-25",
+    "category": "Groceries"
+}
+{
+    "account_id": "A003",
+    "description": "Starbucks Coffee",
+    "amount": -5.45,
+    "type": "debit",
+    "date": "2025-10-26",
+    "category": "Others"
+}
+{
+    "account_id": "A006",
+    "description": "Aviva Car Insurance",
+    "amount": -34.5,
+    "type": "debit",
+    "date": "2025-10-27",
+    "category": "Others"
+}
+{
+    "account_id": "A008",
+    "description": "TfL Bus Fare",
+    "amount": -1.48,
+    "type": "debit",
+    "date": "2025-10-28",
+    "category": "Travel"
+}
+{
+    "account_id": "A008",
+    "description": "ISA Investment",
+    "amount": -150.0,
+    "type": "debit",
+    "date": "2025-10-30",
+    "category": "Others"
+}
+{
+    "account_id": "A001",
+    "description": "Salary - Acme Corp",
+    "amount": 3200.0,
+    "type": "credit",
+    "date": "2025-11-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A003",
+    "description": "Payroll - City Council",
+    "amount": 2800.0,
+    "type": "credit",
+    "date": "2025-11-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A003",
+    "description": "Local Espresso Bar",
+    "amount": -4.32,
+    "type": "debit",
+    "date": "2025-11-01",
+    "category": "Others"
+}
+{
+    "account_id": "A005",
+    "description": "Rent",
+    "amount": -950.0,
+    "type": "debit",
+    "date": "2025-11-01",
+    "category": "Rent"
+}
+{
+    "account_id": "A006",
+    "description": "Pension",
+    "amount": 1200.0,
+    "type": "credit",
+    "date": "2025-11-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A006",
+    "description": "Deliveroo Plus",
+    "amount": -11.99,
+    "type": "debit",
+    "date": "2025-11-01",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A008",
+    "description": "Salary - EDB Corp",
+    "amount": 4500.0,
+    "type": "credit",
+    "date": "2025-11-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A006",
+    "description": "Disney+",
+    "amount": -10.99,
+    "type": "debit",
+    "date": "2025-11-02",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "Regular Savings Transfer",
+    "amount": -100.0,
+    "type": "debit",
+    "date": "2025-11-02",
+    "category": "Others"
+}
+{
+    "account_id": "A001",
+    "description": "Amazon Marketplace",
+    "amount": -24.23,
+    "type": "debit",
+    "date": "2025-11-03",
+    "category": "Others"
+}
+{
+    "account_id": "A001",
+    "description": "Lidl Supermarket",
+    "amount": -34.77,
+    "type": "debit",
+    "date": "2025-11-03",
+    "category": "Groceries"
+}
+{
+    "account_id": "A006",
+    "description": "Netflix",
+    "amount": -15.99,
+    "type": "debit",
+    "date": "2025-11-03",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "Spotify Premium",
+    "amount": -10.99,
+    "type": "debit",
+    "date": "2025-11-03",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A008",
+    "description": "Mortgage Payment",
+    "amount": -1200.0,
+    "type": "debit",
+    "date": "2025-11-03",
+    "category": "Rent"
+}
+{
+    "account_id": "A005",
+    "description": "GWR Railway Ticket",
+    "amount": -25.13,
+    "type": "debit",
+    "date": "2025-11-04",
+    "category": "Travel"
+}
+{
+    "account_id": "A006",
+    "description": "Apple Music",
+    "amount": -10.99,
+    "type": "debit",
+    "date": "2025-11-04",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A001",
+    "description": "Tesco Weekly Shop",
+    "amount": -55.4,
+    "type": "debit",
+    "date": "2025-11-07",
+    "category": "Groceries"
+}
+{
+    "account_id": "A001",
+    "description": "Netflix Monthly",
+    "amount": -15.99,
+    "type": "debit",
+    "date": "2025-11-08",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A003",
+    "description": "Uber",
+    "amount": -12.8,
+    "type": "debit",
+    "date": "2025-11-08",
+    "category": "Travel"
+}
+{
+    "account_id": "A008",
+    "description": "Aviva Car Insurance",
+    "amount": -34.5,
+    "type": "debit",
+    "date": "2025-11-09",
+    "category": "Others"
+}
+{
+    "account_id": "A001",
+    "description": "Council Tax",
+    "amount": -145.0,
+    "type": "debit",
+    "date": "2025-11-10",
+    "category": "Tax"
+}
+{
+    "account_id": "A006",
+    "description": "Deliveroo Order",
+    "amount": -29.9,
+    "type": "debit",
+    "date": "2025-11-10",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A005",
+    "description": "eBay Sales Payout",
+    "amount": 83.36,
+    "type": "credit",
+    "date": "2025-11-11",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A003",
+    "description": "Uber Trip",
+    "amount": -15.35,
+    "type": "debit",
+    "date": "2025-11-12",
+    "category": "Travel"
+}
+{
+    "account_id": "A005",
+    "description": "Freelance Invoice",
+    "amount": 1600.0,
+    "type": "credit",
+    "date": "2025-11-12",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A008",
+    "description": "Sainsbury's",
+    "amount": -72.4,
+    "type": "debit",
+    "date": "2025-11-12",
+    "category": "Groceries"
+}
+{
+    "account_id": "A001",
+    "description": "Starbucks Coffee",
+    "amount": -6.7,
+    "type": "debit",
+    "date": "2025-11-13",
+    "category": "Others"
+}
+{
+    "account_id": "A001",
+    "description": "Zara Store",
+    "amount": -47.87,
+    "type": "debit",
+    "date": "2025-11-14",
+    "category": "Others"
+}
+{
+    "account_id": "A006",
+    "description": "Gym Membership",
+    "amount": -35.0,
+    "type": "debit",
+    "date": "2025-11-15",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "Index Fund Deposit",
+    "amount": -200.0,
+    "type": "debit",
+    "date": "2025-11-15",
+    "category": "Others"
+}
+{
+    "account_id": "A006",
+    "description": "Freelance Design Work",
+    "amount": 493.73,
+    "type": "credit",
+    "date": "2025-11-17",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A006",
+    "description": "Deliveroo Order",
+    "amount": -22.3,
+    "type": "debit",
+    "date": "2025-11-18",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A001",
+    "description": "EasyJet Flight",
+    "amount": -189.0,
+    "type": "debit",
+    "date": "2025-11-20",
+    "category": "Travel"
+}
+{
+    "account_id": "A003",
+    "description": "Disney+ Monthly",
+    "amount": -10.99,
+    "type": "debit",
+    "date": "2025-11-20",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A003",
+    "description": "Costa Coffee",
+    "amount": -4.26,
+    "type": "debit",
+    "date": "2025-11-20",
+    "category": "Others"
+}
+{
+    "account_id": "A005",
+    "description": "ISA Investment",
+    "amount": -150.0,
+    "type": "debit",
+    "date": "2025-11-20",
+    "category": "Others"
+}
+{
+    "account_id": "A006",
+    "description": "Corner Shop Sweets",
+    "amount": -3.42,
+    "type": "debit",
+    "date": "2025-11-23",
+    "category": "Others"
+}
+{
+    "account_id": "A006",
+    "description": "eBay Purchase",
+    "amount": -25.11,
+    "type": "debit",
+    "date": "2025-11-24",
+    "category": "Others"
+}
+{
+    "account_id": "A006",
+    "description": "Amazon Prime Video",
+    "amount": -8.99,
+    "type": "debit",
+    "date": "2025-11-27",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "eBay Seller Fees",
+    "amount": -2.96,
+    "type": "debit",
+    "date": "2025-11-28",
+    "category": "Others"
+}
+{
+    "account_id": "A008",
+    "description": "Amazon Retail",
+    "amount": -54.11,
+    "type": "debit",
+    "date": "2025-11-29",
+    "category": "Others"
+}
+{
+    "account_id": "A005",
+    "description": "Regular Savings Transfer",
+    "amount": -100.0,
+    "type": "debit",
+    "date": "2025-11-30",
+    "category": "Others"
+}
+{
+    "account_id": "A001",
+    "description": "Salary - Acme Corp",
+    "amount": 3200.0,
+    "type": "credit",
+    "date": "2025-12-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A003",
+    "description": "Payroll - City Council",
+    "amount": 2800.0,
+    "type": "credit",
+    "date": "2025-12-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A003",
+    "description": "Sainsbury's Local",
+    "amount": -28.5,
+    "type": "debit",
+    "date": "2025-12-01",
+    "category": "Groceries"
+}
+{
+    "account_id": "A003",
+    "description": "Caff\u00e8 Nero",
+    "amount": -6.26,
+    "type": "debit",
+    "date": "2025-12-01",
+    "category": "Others"
+}
+{
+    "account_id": "A005",
+    "description": "Rent",
+    "amount": -950.0,
+    "type": "debit",
+    "date": "2025-12-01",
+    "category": "Rent"
+}
+{
+    "account_id": "A006",
+    "description": "Pension",
+    "amount": 1200.0,
+    "type": "credit",
+    "date": "2025-12-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A006",
+    "description": "Deliveroo Plus",
+    "amount": -11.99,
+    "type": "debit",
+    "date": "2025-12-01",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A008",
+    "description": "Salary - EDB Corp",
+    "amount": 4500.0,
+    "type": "credit",
+    "date": "2025-12-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A008",
+    "description": "Tesco Express",
+    "amount": -22.83,
+    "type": "debit",
+    "date": "2025-12-01",
+    "category": "Groceries"
+}
+{
+    "account_id": "A006",
+    "description": "Disney+",
+    "amount": -10.99,
+    "type": "debit",
+    "date": "2025-12-02",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "Amazon Prime Video",
+    "amount": -8.99,
+    "type": "debit",
+    "date": "2025-12-02",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "Netflix",
+    "amount": -15.99,
+    "type": "debit",
+    "date": "2025-12-03",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "Spotify Premium",
+    "amount": -10.99,
+    "type": "debit",
+    "date": "2025-12-03",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A008",
+    "description": "Mortgage Payment",
+    "amount": -1200.0,
+    "type": "debit",
+    "date": "2025-12-03",
+    "category": "Rent"
+}
+{
+    "account_id": "A005",
+    "description": "Regular Savings Transfer",
+    "amount": -100.0,
+    "type": "debit",
+    "date": "2025-12-04",
+    "category": "Others"
+}
+{
+    "account_id": "A006",
+    "description": "Amazon Prime",
+    "amount": -8.99,
+    "type": "debit",
+    "date": "2025-12-04",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A003",
+    "description": "Gym Membership",
+    "amount": -35.0,
+    "type": "debit",
+    "date": "2025-12-05",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A008",
+    "description": "eBay Seller Fees",
+    "amount": -3.4,
+    "type": "debit",
+    "date": "2025-12-05",
+    "category": "Others"
+}
+{
+    "account_id": "A003",
+    "description": "Zara Store",
+    "amount": -107.54,
+    "type": "debit",
+    "date": "2025-12-06",
+    "category": "Others"
+}
+{
+    "account_id": "A001",
+    "description": "Netflix Monthly",
+    "amount": -15.99,
+    "type": "debit",
+    "date": "2025-12-08",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A008",
+    "description": "Netflix Premium",
+    "amount": -17.99,
+    "type": "debit",
+    "date": "2025-12-08",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A008",
+    "description": "Lidl Supermarket",
+    "amount": -25.6,
+    "type": "debit",
+    "date": "2025-12-08",
+    "category": "Groceries"
+}
+{
+    "account_id": "A005",
+    "description": "Pret A Manger",
+    "amount": -8.76,
+    "type": "debit",
+    "date": "2025-12-09",
+    "category": "Others"
+}
+{
+    "account_id": "A001",
+    "description": "Council Tax",
+    "amount": -145.0,
+    "type": "debit",
+    "date": "2025-12-10",
+    "category": "Tax"
+}
+{
+    "account_id": "A008",
+    "description": "Council Tax",
+    "amount": -198.0,
+    "type": "debit",
+    "date": "2025-12-10",
+    "category": "Tax"
+}
+{
+    "account_id": "A006",
+    "description": "Deliveroo Order",
+    "amount": -41.2,
+    "type": "debit",
+    "date": "2025-12-12",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A005",
+    "description": "Aviva Car Insurance",
+    "amount": -34.5,
+    "type": "debit",
+    "date": "2025-12-14",
+    "category": "Others"
+}
+{
+    "account_id": "A005",
+    "description": "HMRC Self Assessment",
+    "amount": -620.0,
+    "type": "debit",
+    "date": "2025-12-15",
+    "category": "Tax"
+}
+{
+    "account_id": "A008",
+    "description": "Pet Insurance",
+    "amount": -15.2,
+    "type": "debit",
+    "date": "2025-12-15",
+    "category": "Others"
+}
+{
+    "account_id": "A003",
+    "description": "TfL Bus Fare",
+    "amount": -2.23,
+    "type": "debit",
+    "date": "2025-12-17",
+    "category": "Travel"
+}
+{
+    "account_id": "A001",
+    "description": "Sainsbury's Christmas Shop",
+    "amount": -112.5,
+    "type": "debit",
+    "date": "2025-12-18",
+    "category": "Groceries"
+}
+{
+    "account_id": "A005",
+    "description": "Freelance Invoice",
+    "amount": 1400.0,
+    "type": "credit",
+    "date": "2025-12-18",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A008",
+    "description": "Gym Membership",
+    "amount": -39.0,
+    "type": "debit",
+    "date": "2025-12-19",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "Deliveroo Order",
+    "amount": -25.6,
+    "type": "debit",
+    "date": "2025-12-20",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "Freelance Design Work",
+    "amount": 593.55,
+    "type": "credit",
+    "date": "2025-12-21",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A001",
+    "description": "Vending Machine",
+    "amount": -2.34,
+    "type": "debit",
+    "date": "2025-12-25",
+    "category": "Others"
+}
+{
+    "account_id": "A005",
+    "description": "Corner Shop Sweets",
+    "amount": -3.28,
+    "type": "debit",
+    "date": "2025-12-28",
+    "category": "Others"
+}
+{
+    "account_id": "A008",
+    "description": "Co-op Food",
+    "amount": -13.43,
+    "type": "debit",
+    "date": "2025-12-28",
+    "category": "Groceries"
+}
+{
+    "account_id": "A005",
+    "description": "Aviva Car Insurance",
+    "amount": -34.5,
+    "type": "debit",
+    "date": "2025-12-31",
+    "category": "Others"
+}
+{
+    "account_id": "A001",
+    "description": "Salary - Acme Corp",
+    "amount": 3200.0,
+    "type": "credit",
+    "date": "2026-01-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A002",
+    "description": "Savings Interest",
+    "amount": 25.1,
+    "type": "credit",
+    "date": "2026-01-01",
+    "category": "Interest"
+}
+{
+    "account_id": "A003",
+    "description": "Payroll - City Council",
+    "amount": 2800.0,
+    "type": "credit",
+    "date": "2026-01-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A005",
+    "description": "Rent",
+    "amount": -950.0,
+    "type": "debit",
+    "date": "2026-01-01",
+    "category": "Rent"
+}
+{
+    "account_id": "A006",
+    "description": "Pension",
+    "amount": 1200.0,
+    "type": "credit",
+    "date": "2026-01-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A006",
+    "description": "Deliveroo Plus",
+    "amount": -11.99,
+    "type": "debit",
+    "date": "2026-01-01",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A008",
+    "description": "Salary - EDB Corp",
+    "amount": 4500.0,
+    "type": "credit",
+    "date": "2026-01-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A009",
+    "description": "ISA Transfer",
+    "amount": 500.0,
+    "type": "credit",
+    "date": "2026-01-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A001",
+    "description": "eBay Seller Fees",
+    "amount": -2.43,
+    "type": "debit",
+    "date": "2026-01-02",
+    "category": "Others"
+}
+{
+    "account_id": "A006",
+    "description": "Disney+",
+    "amount": -10.99,
+    "type": "debit",
+    "date": "2026-01-02",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A008",
+    "description": "TfL Bus Fare",
+    "amount": -1.56,
+    "type": "debit",
+    "date": "2026-01-02",
+    "category": "Travel"
+}
+{
+    "account_id": "A006",
+    "description": "Netflix",
+    "amount": -15.99,
+    "type": "debit",
+    "date": "2026-01-03",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "Spotify Premium",
+    "amount": -10.99,
+    "type": "debit",
+    "date": "2026-01-03",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A008",
+    "description": "Mortgage Payment",
+    "amount": -1200.0,
+    "type": "debit",
+    "date": "2026-01-03",
+    "category": "Rent"
+}
+{
+    "account_id": "A006",
+    "description": "Apple Music",
+    "amount": -10.99,
+    "type": "debit",
+    "date": "2026-01-04",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "Amazon Prime",
+    "amount": -8.99,
+    "type": "debit",
+    "date": "2026-01-04",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A008",
+    "description": "Freelance Design Work",
+    "amount": 573.78,
+    "type": "credit",
+    "date": "2026-01-05",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A001",
+    "description": "Tesco",
+    "amount": -48.7,
+    "type": "debit",
+    "date": "2026-01-06",
+    "category": "Groceries"
+}
+{
+    "account_id": "A001",
+    "description": "Costa Coffee",
+    "amount": -4.67,
+    "type": "debit",
+    "date": "2026-01-06",
+    "category": "Others"
+}
+{
+    "account_id": "A005",
+    "description": "H&M",
+    "amount": -57.76,
+    "type": "debit",
+    "date": "2026-01-07",
+    "category": "Others"
+}
+{
+    "account_id": "A001",
+    "description": "Netflix Monthly",
+    "amount": -15.99,
+    "type": "debit",
+    "date": "2026-01-08",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A003",
+    "description": "Sainsbury's",
+    "amount": -41.2,
+    "type": "debit",
+    "date": "2026-01-08",
+    "category": "Groceries"
+}
+{
+    "account_id": "A008",
+    "description": "Tesco",
+    "amount": -58.9,
+    "type": "debit",
+    "date": "2026-01-08",
+    "category": "Groceries"
+}
+{
+    "account_id": "A001",
+    "description": "Council Tax",
+    "amount": -145.0,
+    "type": "debit",
+    "date": "2026-01-10",
+    "category": "Tax"
+}
+{
+    "account_id": "A005",
+    "description": "Freelance Invoice",
+    "amount": 1500.0,
+    "type": "credit",
+    "date": "2026-01-10",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A006",
+    "description": "Deliveroo Order",
+    "amount": -32.5,
+    "type": "debit",
+    "date": "2026-01-10",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A001",
+    "description": "Index Fund Deposit",
+    "amount": -200.0,
+    "type": "debit",
+    "date": "2026-01-11",
+    "category": "Others"
+}
+{
+    "account_id": "A003",
+    "description": "Lidl Supermarket",
+    "amount": -21.48,
+    "type": "debit",
+    "date": "2026-01-11",
+    "category": "Groceries"
+}
+{
+    "account_id": "A005",
+    "description": "Amazon Marketplace",
+    "amount": -20.72,
+    "type": "debit",
+    "date": "2026-01-11",
+    "category": "Others"
+}
+{
+    "account_id": "A001",
+    "description": "Aldi Grocery",
+    "amount": -49.84,
+    "type": "debit",
+    "date": "2026-01-12",
+    "category": "Groceries"
+}
+{
+    "account_id": "A003",
+    "description": "Postage Stamps",
+    "amount": -5.7,
+    "type": "debit",
+    "date": "2026-01-14",
+    "category": "Others"
+}
+{
+    "account_id": "A003",
+    "description": "Aviva Car Insurance",
+    "amount": -34.5,
+    "type": "debit",
+    "date": "2026-01-15",
+    "category": "Others"
+}
+{
+    "account_id": "A006",
+    "description": "Gym Membership",
+    "amount": -35.0,
+    "type": "debit",
+    "date": "2026-01-15",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "Caff\u00e8 Nero",
+    "amount": -4.24,
+    "type": "debit",
+    "date": "2026-01-16",
+    "category": "Others"
+}
+{
+    "account_id": "A006",
+    "description": "Deliveroo Order",
+    "amount": -27.8,
+    "type": "debit",
+    "date": "2026-01-17",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "Refund - Amazon Retail",
+    "amount": 30.96,
+    "type": "credit",
+    "date": "2026-01-19",
+    "category": "Others"
+}
+{
+    "account_id": "A008",
+    "description": "Corner Shop Sweets",
+    "amount": -3.56,
+    "type": "debit",
+    "date": "2026-01-21",
+    "category": "Others"
+}
+{
+    "account_id": "A003",
+    "description": "Regular Savings Transfer",
+    "amount": -100.0,
+    "type": "debit",
+    "date": "2026-01-22",
+    "category": "Others"
+}
+{
+    "account_id": "A003",
+    "description": "LNER Train Ticket",
+    "amount": -61.67,
+    "type": "debit",
+    "date": "2026-01-22",
+    "category": "Travel"
+}
+{
+    "account_id": "A001",
+    "description": "Zara Store",
+    "amount": -133.4,
+    "type": "debit",
+    "date": "2026-01-23",
+    "category": "Others"
+}
+{
+    "account_id": "A005",
+    "description": "Tesco Express",
+    "amount": -27.81,
+    "type": "debit",
+    "date": "2026-01-23",
+    "category": "Groceries"
+}
+{
+    "account_id": "A006",
+    "description": "Deliveroo Order",
+    "amount": -19.9,
+    "type": "debit",
+    "date": "2026-01-24",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "Newspaper Kiosk",
+    "amount": -1.84,
+    "type": "debit",
+    "date": "2026-01-24",
+    "category": "Others"
+}
+{
+    "account_id": "A003",
+    "description": "Starbucks Coffee",
+    "amount": -4.09,
+    "type": "debit",
+    "date": "2026-01-26",
+    "category": "Others"
+}
+{
+    "account_id": "A001",
+    "description": "Local Espresso Bar",
+    "amount": -3.67,
+    "type": "debit",
+    "date": "2026-01-27",
+    "category": "Others"
+}
+{
+    "account_id": "A001",
+    "description": "Caff\u00e8 Nero",
+    "amount": -5.66,
+    "type": "debit",
+    "date": "2026-01-27",
+    "category": "Others"
+}
+{
+    "account_id": "A003",
+    "description": "Amazon Marketplace",
+    "amount": -34.18,
+    "type": "debit",
+    "date": "2026-01-27",
+    "category": "Others"
+}
+{
+    "account_id": "A003",
+    "description": "ISA Investment",
+    "amount": -150.0,
+    "type": "debit",
+    "date": "2026-01-28",
+    "category": "Others"
+}
+{
+    "account_id": "A001",
+    "description": "Trainline Ticket",
+    "amount": -45.85,
+    "type": "debit",
+    "date": "2026-01-29",
+    "category": "Travel"
+}
+{
+    "account_id": "A001",
+    "description": "Salary - Acme Corp",
+    "amount": 3200.0,
+    "type": "credit",
+    "date": "2026-02-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A003",
+    "description": "Payroll - City Council",
+    "amount": 2800.0,
+    "type": "credit",
+    "date": "2026-02-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A005",
+    "description": "Rent",
+    "amount": -950.0,
+    "type": "debit",
+    "date": "2026-02-01",
+    "category": "Rent"
+}
+{
+    "account_id": "A005",
+    "description": "Aldi Grocery",
+    "amount": -31.07,
+    "type": "debit",
+    "date": "2026-02-01",
+    "category": "Groceries"
+}
+{
+    "account_id": "A006",
+    "description": "Pension",
+    "amount": 1200.0,
+    "type": "credit",
+    "date": "2026-02-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A006",
+    "description": "Deliveroo Plus",
+    "amount": -11.99,
+    "type": "debit",
+    "date": "2026-02-01",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A008",
+    "description": "Salary - EDB Corp",
+    "amount": 4500.0,
+    "type": "credit",
+    "date": "2026-02-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A003",
+    "description": "Waitrose & Partners",
+    "amount": -56.0,
+    "type": "debit",
+    "date": "2026-02-02",
+    "category": "Groceries"
+}
+{
+    "account_id": "A006",
+    "description": "Disney+",
+    "amount": -10.99,
+    "type": "debit",
+    "date": "2026-02-02",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A001",
+    "description": "Aviva Car Insurance",
+    "amount": -34.5,
+    "type": "debit",
+    "date": "2026-02-03",
+    "category": "Others"
+}
+{
+    "account_id": "A006",
+    "description": "Netflix",
+    "amount": -15.99,
+    "type": "debit",
+    "date": "2026-02-03",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A008",
+    "description": "Mortgage Payment",
+    "amount": -1200.0,
+    "type": "debit",
+    "date": "2026-02-03",
+    "category": "Rent"
+}
+{
+    "account_id": "A008",
+    "description": "Spotify Family",
+    "amount": -19.99,
+    "type": "debit",
+    "date": "2026-02-03",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A001",
+    "description": "Lidl",
+    "amount": -35.6,
+    "type": "debit",
+    "date": "2026-02-05",
+    "category": "Groceries"
+}
+{
+    "account_id": "A008",
+    "description": "TfL Bus Fare",
+    "amount": -1.92,
+    "type": "debit",
+    "date": "2026-02-07",
+    "category": "Travel"
+}
+{
+    "account_id": "A001",
+    "description": "Netflix Monthly",
+    "amount": -15.99,
+    "type": "debit",
+    "date": "2026-02-08",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A005",
+    "description": "Freelance Invoice",
+    "amount": 1700.0,
+    "type": "credit",
+    "date": "2026-02-08",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A005",
+    "description": "Apple Store MacBook",
+    "amount": -1249.0,
+    "type": "debit",
+    "date": "2026-02-08",
+    "category": "Others"
+}
+{
+    "account_id": "A006",
+    "description": "Deliveroo Order",
+    "amount": -36.7,
+    "type": "debit",
+    "date": "2026-02-08",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A008",
+    "description": "Parking Meter",
+    "amount": -2.47,
+    "type": "debit",
+    "date": "2026-02-08",
+    "category": "Others"
+}
+{
+    "account_id": "A001",
+    "description": "Council Tax",
+    "amount": -145.0,
+    "type": "debit",
+    "date": "2026-02-10",
+    "category": "Tax"
+}
+{
+    "account_id": "A003",
+    "description": "Postage Stamps",
+    "amount": -5.02,
+    "type": "debit",
+    "date": "2026-02-12",
+    "category": "Others"
+}
+{
+    "account_id": "A005",
+    "description": "Parking Meter",
+    "amount": -2.63,
+    "type": "debit",
+    "date": "2026-02-12",
+    "category": "Others"
+}
+{
+    "account_id": "A006",
+    "description": "Index Fund Deposit",
+    "amount": -200.0,
+    "type": "debit",
+    "date": "2026-02-14",
+    "category": "Others"
+}
+{
+    "account_id": "A003",
+    "description": "Council Tax",
+    "amount": -145.0,
+    "type": "debit",
+    "date": "2026-02-15",
+    "category": "Tax"
+}
+{
+    "account_id": "A006",
+    "description": "Deliveroo Order",
+    "amount": -23.4,
+    "type": "debit",
+    "date": "2026-02-15",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "Gym Membership",
+    "amount": -35.0,
+    "type": "debit",
+    "date": "2026-02-15",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A008",
+    "description": "Shell Fuel",
+    "amount": -62.0,
+    "type": "debit",
+    "date": "2026-02-15",
+    "category": "Travel"
+}
+{
+    "account_id": "A003",
+    "description": "Amazon Prime Video",
+    "amount": -8.99,
+    "type": "debit",
+    "date": "2026-02-16",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A001",
+    "description": "Co-op Food",
+    "amount": -9.76,
+    "type": "debit",
+    "date": "2026-02-18",
+    "category": "Groceries"
+}
+{
+    "account_id": "A003",
+    "description": "Local Espresso Bar",
+    "amount": -3.6,
+    "type": "debit",
+    "date": "2026-02-18",
+    "category": "Others"
+}
+{
+    "account_id": "A003",
+    "description": "Aviva Car Insurance",
+    "amount": -34.5,
+    "type": "debit",
+    "date": "2026-02-19",
+    "category": "Others"
+}
+{
+    "account_id": "A008",
+    "description": "ISA Investment",
+    "amount": -150.0,
+    "type": "debit",
+    "date": "2026-02-19",
+    "category": "Others"
+}
+{
+    "account_id": "A006",
+    "description": "Refund - Amazon Retail",
+    "amount": 46.73,
+    "type": "credit",
+    "date": "2026-02-21",
+    "category": "Others"
+}
+{
+    "account_id": "A001",
+    "description": "Local Espresso Bar",
+    "amount": -3.13,
+    "type": "debit",
+    "date": "2026-02-22",
+    "category": "Others"
+}
+{
+    "account_id": "A008",
+    "description": "Tesco Express",
+    "amount": -21.15,
+    "type": "debit",
+    "date": "2026-02-23",
+    "category": "Groceries"
+}
+{
+    "account_id": "A005",
+    "description": "ASOS Fashion",
+    "amount": -92.22,
+    "type": "debit",
+    "date": "2026-02-24",
+    "category": "Others"
+}
+{
+    "account_id": "A005",
+    "description": "H&M",
+    "amount": -65.41,
+    "type": "debit",
+    "date": "2026-02-26",
+    "category": "Others"
+}
+{
+    "account_id": "A001",
+    "description": "Salary - Acme Corp",
+    "amount": 3200.0,
+    "type": "credit",
+    "date": "2026-03-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A003",
+    "description": "Payroll - City Council",
+    "amount": 2800.0,
+    "type": "credit",
+    "date": "2026-03-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A003",
+    "description": "Starbucks Coffee",
+    "amount": -4.37,
+    "type": "debit",
+    "date": "2026-03-01",
+    "category": "Others"
+}
+{
+    "account_id": "A005",
+    "description": "Rent",
+    "amount": -950.0,
+    "type": "debit",
+    "date": "2026-03-01",
+    "category": "Rent"
+}
+{
+    "account_id": "A006",
+    "description": "Pension",
+    "amount": 1200.0,
+    "type": "credit",
+    "date": "2026-03-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A006",
+    "description": "Deliveroo Plus",
+    "amount": -11.99,
+    "type": "debit",
+    "date": "2026-03-01",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A008",
+    "description": "Salary - EDB Corp",
+    "amount": 4500.0,
+    "type": "credit",
+    "date": "2026-03-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A006",
+    "description": "Disney+",
+    "amount": -10.99,
+    "type": "debit",
+    "date": "2026-03-02",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "Netflix",
+    "amount": -15.99,
+    "type": "debit",
+    "date": "2026-03-03",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "Spotify Premium",
+    "amount": -10.99,
+    "type": "debit",
+    "date": "2026-03-03",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A008",
+    "description": "Mortgage Payment",
+    "amount": -1200.0,
+    "type": "debit",
+    "date": "2026-03-03",
+    "category": "Rent"
+}
+{
+    "account_id": "A006",
+    "description": "Apple Music",
+    "amount": -10.99,
+    "type": "debit",
+    "date": "2026-03-04",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "Amazon Prime",
+    "amount": -8.99,
+    "type": "debit",
+    "date": "2026-03-04",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A001",
+    "description": "Tesco Weekly Shop",
+    "amount": -51.9,
+    "type": "debit",
+    "date": "2026-03-07",
+    "category": "Groceries"
+}
+{
+    "account_id": "A008",
+    "description": "Trainline Ticket",
+    "amount": -47.65,
+    "type": "debit",
+    "date": "2026-03-07",
+    "category": "Travel"
+}
+{
+    "account_id": "A001",
+    "description": "Netflix Monthly",
+    "amount": -15.99,
+    "type": "debit",
+    "date": "2026-03-08",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A003",
+    "description": "YouTube Premium",
+    "amount": -12.99,
+    "type": "debit",
+    "date": "2026-03-09",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A001",
+    "description": "Council Tax",
+    "amount": -145.0,
+    "type": "debit",
+    "date": "2026-03-10",
+    "category": "Tax"
+}
+{
+    "account_id": "A003",
+    "description": "Tesco",
+    "amount": -36.8,
+    "type": "debit",
+    "date": "2026-03-10",
+    "category": "Groceries"
+}
+{
+    "account_id": "A006",
+    "description": "Deliveroo Order",
+    "amount": -29.9,
+    "type": "debit",
+    "date": "2026-03-10",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A008",
+    "description": "Waitrose",
+    "amount": -85.2,
+    "type": "debit",
+    "date": "2026-03-10",
+    "category": "Groceries"
+}
+{
+    "account_id": "A006",
+    "description": "Currys Television",
+    "amount": -449.0,
+    "type": "debit",
+    "date": "2026-03-11",
+    "category": "Others"
+}
+{
+    "account_id": "A001",
+    "description": "Pet Insurance",
+    "amount": -15.2,
+    "type": "debit",
+    "date": "2026-03-12",
+    "category": "Others"
+}
+{
+    "account_id": "A005",
+    "description": "Freelance Invoice",
+    "amount": 1500.0,
+    "type": "credit",
+    "date": "2026-03-12",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A005",
+    "description": "Disney+ Monthly",
+    "amount": -10.99,
+    "type": "debit",
+    "date": "2026-03-14",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A005",
+    "description": "Waitrose",
+    "amount": -45.6,
+    "type": "debit",
+    "date": "2026-03-15",
+    "category": "Groceries"
+}
+{
+    "account_id": "A006",
+    "description": "Gym Membership",
+    "amount": -35.0,
+    "type": "debit",
+    "date": "2026-03-15",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A005",
+    "description": "Freelance Design Work",
+    "amount": 537.31,
+    "type": "credit",
+    "date": "2026-03-16",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A005",
+    "description": "Postage Stamps",
+    "amount": -4.51,
+    "type": "debit",
+    "date": "2026-03-17",
+    "category": "Others"
+}
+{
+    "account_id": "A001",
+    "description": "Freelance Design Work",
+    "amount": 427.48,
+    "type": "credit",
+    "date": "2026-03-18",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A006",
+    "description": "Deliveroo Order",
+    "amount": -34.5,
+    "type": "debit",
+    "date": "2026-03-18",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A005",
+    "description": "LNER Train Ticket",
+    "amount": -77.37,
+    "type": "debit",
+    "date": "2026-03-19",
+    "category": "Travel"
+}
+{
+    "account_id": "A006",
+    "description": "Lidl Supermarket",
+    "amount": -35.0,
+    "type": "debit",
+    "date": "2026-03-19",
+    "category": "Groceries"
+}
+{
+    "account_id": "A005",
+    "description": "Parking Meter",
+    "amount": -4.63,
+    "type": "debit",
+    "date": "2026-03-24",
+    "category": "Others"
+}
+{
+    "account_id": "A001",
+    "description": "Local Espresso Bar",
+    "amount": -4.03,
+    "type": "debit",
+    "date": "2026-03-29",
+    "category": "Others"
+}
+{
+    "account_id": "A003",
+    "description": "Costa Coffee",
+    "amount": -4.65,
+    "type": "debit",
+    "date": "2026-03-29",
+    "category": "Others"
+}
+{
+    "account_id": "A008",
+    "description": "Regular Savings Transfer",
+    "amount": -100.0,
+    "type": "debit",
+    "date": "2026-03-29",
+    "category": "Others"
+}
+{
+    "account_id": "A003",
+    "description": "Trainline Ticket",
+    "amount": -34.54,
+    "type": "debit",
+    "date": "2026-03-31",
+    "category": "Travel"
+}
+{
+    "account_id": "A006",
+    "description": "Pet Insurance",
+    "amount": -15.2,
+    "type": "debit",
+    "date": "2026-03-31",
+    "category": "Others"
+}
+{
+    "account_id": "A001",
+    "description": "Salary - Acme Corp",
+    "amount": 3200.0,
+    "type": "credit",
+    "date": "2026-04-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A002",
+    "description": "Savings Interest",
+    "amount": 25.8,
+    "type": "credit",
+    "date": "2026-04-01",
+    "category": "Interest"
+}
+{
+    "account_id": "A003",
+    "description": "Payroll - City Council",
+    "amount": 2800.0,
+    "type": "credit",
+    "date": "2026-04-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A005",
+    "description": "Rent",
+    "amount": -950.0,
+    "type": "debit",
+    "date": "2026-04-01",
+    "category": "Rent"
+}
+{
+    "account_id": "A006",
+    "description": "Pension",
+    "amount": 1200.0,
+    "type": "credit",
+    "date": "2026-04-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A006",
+    "description": "Deliveroo Plus",
+    "amount": -11.99,
+    "type": "debit",
+    "date": "2026-04-01",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "Audible",
+    "amount": -7.99,
+    "type": "debit",
+    "date": "2026-04-01",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A008",
+    "description": "Salary - EDB Corp",
+    "amount": 4500.0,
+    "type": "credit",
+    "date": "2026-04-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A009",
+    "description": "ISA Interest",
+    "amount": 19.2,
+    "type": "credit",
+    "date": "2026-04-01",
+    "category": "Interest"
+}
+{
+    "account_id": "A006",
+    "description": "Disney+",
+    "amount": -10.99,
+    "type": "debit",
+    "date": "2026-04-02",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A008",
+    "description": "Apple Store MacBook",
+    "amount": -1249.0,
+    "type": "debit",
+    "date": "2026-04-02",
+    "category": "Others"
+}
+{
+    "account_id": "A006",
+    "description": "Netflix",
+    "amount": -15.99,
+    "type": "debit",
+    "date": "2026-04-03",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A008",
+    "description": "Mortgage Payment",
+    "amount": -1200.0,
+    "type": "debit",
+    "date": "2026-04-03",
+    "category": "Rent"
+}
+{
+    "account_id": "A008",
+    "description": "Co-op Food",
+    "amount": -12.54,
+    "type": "debit",
+    "date": "2026-04-03",
+    "category": "Groceries"
+}
+{
+    "account_id": "A001",
+    "description": "Sainsbury's",
+    "amount": -44.1,
+    "type": "debit",
+    "date": "2026-04-04",
+    "category": "Groceries"
+}
+{
+    "account_id": "A003",
+    "description": "Stagecoach Bus Pass",
+    "amount": -15.8,
+    "type": "debit",
+    "date": "2026-04-05",
+    "category": "Travel"
+}
+{
+    "account_id": "A005",
+    "description": "Freelance Invoice",
+    "amount": 1900.0,
+    "type": "credit",
+    "date": "2026-04-05",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A006",
+    "description": "eBay Purchase",
+    "amount": -21.2,
+    "type": "debit",
+    "date": "2026-04-05",
+    "category": "Others"
+}
+{
+    "account_id": "A006",
+    "description": "Pet Insurance",
+    "amount": -15.2,
+    "type": "debit",
+    "date": "2026-04-06",
+    "category": "Others"
+}
+{
+    "account_id": "A001",
+    "description": "Netflix Monthly",
+    "amount": -15.99,
+    "type": "debit",
+    "date": "2026-04-08",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A003",
+    "description": "Coffee Shop",
+    "amount": -5.2,
+    "type": "debit",
+    "date": "2026-04-08",
+    "category": "Others"
+}
+{
+    "account_id": "A006",
+    "description": "Deliveroo Order",
+    "amount": -28.4,
+    "type": "debit",
+    "date": "2026-04-08",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A008",
+    "description": "Corner Shop Sweets",
+    "amount": -3.42,
+    "type": "debit",
+    "date": "2026-04-08",
+    "category": "Others"
+}
+{
+    "account_id": "A003",
+    "description": "Waitrose & Partners",
+    "amount": -50.92,
+    "type": "debit",
+    "date": "2026-04-10",
+    "category": "Groceries"
+}
+{
+    "account_id": "A006",
+    "description": "eBay Seller Fees",
+    "amount": -7.01,
+    "type": "debit",
+    "date": "2026-04-10",
+    "category": "Others"
+}
+{
+    "account_id": "A008",
+    "description": "Council Tax",
+    "amount": -198.0,
+    "type": "debit",
+    "date": "2026-04-10",
+    "category": "Tax"
+}
+{
+    "account_id": "A003",
+    "description": "Amazon Prime Video",
+    "amount": -8.99,
+    "type": "debit",
+    "date": "2026-04-11",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "Co-op Food",
+    "amount": -19.01,
+    "type": "debit",
+    "date": "2026-04-11",
+    "category": "Groceries"
+}
+{
+    "account_id": "A003",
+    "description": "Pret A Manger",
+    "amount": -6.98,
+    "type": "debit",
+    "date": "2026-04-12",
+    "category": "Others"
+}
+{
+    "account_id": "A006",
+    "description": "Costa Coffee",
+    "amount": -3.84,
+    "type": "debit",
+    "date": "2026-04-14",
+    "category": "Others"
+}
+{
+    "account_id": "A001",
+    "description": "HMRC Self Assessment",
+    "amount": -850.0,
+    "type": "debit",
+    "date": "2026-04-15",
+    "category": "Tax"
+}
+{
+    "account_id": "A001",
+    "description": "Pet Insurance",
+    "amount": -15.2,
+    "type": "debit",
+    "date": "2026-04-15",
+    "category": "Others"
+}
+{
+    "account_id": "A006",
+    "description": "Gym Membership",
+    "amount": -35.0,
+    "type": "debit",
+    "date": "2026-04-15",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A001",
+    "description": "eBay Seller Fees",
+    "amount": -8.17,
+    "type": "debit",
+    "date": "2026-04-16",
+    "category": "Others"
+}
+{
+    "account_id": "A005",
+    "description": "Local Espresso Bar",
+    "amount": -3.47,
+    "type": "debit",
+    "date": "2026-04-16",
+    "category": "Others"
+}
+{
+    "account_id": "A006",
+    "description": "Deliveroo Order",
+    "amount": -39.9,
+    "type": "debit",
+    "date": "2026-04-16",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "Supermarket",
+    "amount": -52.1,
+    "type": "debit",
+    "date": "2026-04-20",
+    "category": "Groceries"
+}
+{
+    "account_id": "A005",
+    "description": "Starbucks Coffee",
+    "amount": -6.53,
+    "type": "debit",
+    "date": "2026-04-21",
+    "category": "Others"
+}
+{
+    "account_id": "A003",
+    "description": "Gym Membership",
+    "amount": -39.0,
+    "type": "debit",
+    "date": "2026-04-22",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A008",
+    "description": "Direct Line Home Insurance",
+    "amount": -22.8,
+    "type": "debit",
+    "date": "2026-04-22",
+    "category": "Others"
+}
+{
+    "account_id": "A008",
+    "description": "Waitrose & Partners",
+    "amount": -54.71,
+    "type": "debit",
+    "date": "2026-04-25",
+    "category": "Groceries"
+}
+{
+    "account_id": "A001",
+    "description": "Aldi Grocery",
+    "amount": -35.96,
+    "type": "debit",
+    "date": "2026-04-26",
+    "category": "Groceries"
+}
+{
+    "account_id": "A003",
+    "description": "Co-op Food",
+    "amount": -12.52,
+    "type": "debit",
+    "date": "2026-04-28",
+    "category": "Groceries"
+}
+{
+    "account_id": "A006",
+    "description": "Uber Trip",
+    "amount": -11.15,
+    "type": "debit",
+    "date": "2026-04-30",
+    "category": "Travel"
+}
+{
+    "account_id": "A001",
+    "description": "Salary - Acme Corp",
+    "amount": 3200.0,
+    "type": "credit",
+    "date": "2026-05-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A001",
+    "description": "Refund - Amazon Retail",
+    "amount": 27.38,
+    "type": "credit",
+    "date": "2026-05-01",
+    "category": "Others"
+}
+{
+    "account_id": "A003",
+    "description": "Payroll - City Council",
+    "amount": 2800.0,
+    "type": "credit",
+    "date": "2026-05-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A003",
+    "description": "Vending Machine",
+    "amount": -2.68,
+    "type": "debit",
+    "date": "2026-05-01",
+    "category": "Others"
+}
+{
+    "account_id": "A003",
+    "description": "Costa Coffee",
+    "amount": -5.35,
+    "type": "debit",
+    "date": "2026-05-01",
+    "category": "Others"
+}
+{
+    "account_id": "A005",
+    "description": "Rent",
+    "amount": -950.0,
+    "type": "debit",
+    "date": "2026-05-01",
+    "category": "Rent"
+}
+{
+    "account_id": "A006",
+    "description": "Pension",
+    "amount": 1200.0,
+    "type": "credit",
+    "date": "2026-05-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A006",
+    "description": "Deliveroo Plus",
+    "amount": -11.99,
+    "type": "debit",
+    "date": "2026-05-01",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A008",
+    "description": "Salary - EDB Corp",
+    "amount": 4500.0,
+    "type": "credit",
+    "date": "2026-05-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A003",
+    "description": "eBay Purchase",
+    "amount": -10.49,
+    "type": "debit",
+    "date": "2026-05-02",
+    "category": "Others"
+}
+{
+    "account_id": "A006",
+    "description": "Disney+",
+    "amount": -10.99,
+    "type": "debit",
+    "date": "2026-05-02",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "Lidl Supermarket",
+    "amount": -31.11,
+    "type": "debit",
+    "date": "2026-05-02",
+    "category": "Groceries"
+}
+{
+    "account_id": "A006",
+    "description": "Netflix",
+    "amount": -15.99,
+    "type": "debit",
+    "date": "2026-05-03",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "Spotify Premium",
+    "amount": -10.99,
+    "type": "debit",
+    "date": "2026-05-03",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "eBay Seller Fees",
+    "amount": -3.97,
+    "type": "debit",
+    "date": "2026-05-03",
+    "category": "Others"
+}
+{
+    "account_id": "A008",
+    "description": "Mortgage Payment",
+    "amount": -1200.0,
+    "type": "debit",
+    "date": "2026-05-03",
+    "category": "Rent"
+}
+{
+    "account_id": "A003",
+    "description": "Caff\u00e8 Nero",
+    "amount": -5.86,
+    "type": "debit",
+    "date": "2026-05-04",
+    "category": "Others"
+}
+{
+    "account_id": "A006",
+    "description": "Apple Music",
+    "amount": -10.99,
+    "type": "debit",
+    "date": "2026-05-04",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "Amazon Prime",
+    "amount": -8.99,
+    "type": "debit",
+    "date": "2026-05-04",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A001",
+    "description": "Tesco",
+    "amount": -45.8,
+    "type": "debit",
+    "date": "2026-05-05",
+    "category": "Groceries"
+}
+{
+    "account_id": "A006",
+    "description": "Zara Store",
+    "amount": -95.52,
+    "type": "debit",
+    "date": "2026-05-05",
+    "category": "Others"
+}
+{
+    "account_id": "A005",
+    "description": "Aldi Grocery",
+    "amount": -53.38,
+    "type": "debit",
+    "date": "2026-05-07",
+    "category": "Groceries"
+}
+{
+    "account_id": "A001",
+    "description": "Netflix Monthly",
+    "amount": -15.99,
+    "type": "debit",
+    "date": "2026-05-08",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A005",
+    "description": "Index Fund Deposit",
+    "amount": -200.0,
+    "type": "debit",
+    "date": "2026-05-08",
+    "category": "Others"
+}
+{
+    "account_id": "A001",
+    "description": "Council Tax",
+    "amount": -145.0,
+    "type": "debit",
+    "date": "2026-05-10",
+    "category": "Tax"
+}
+{
+    "account_id": "A005",
+    "description": "Freelance Invoice",
+    "amount": 1500.0,
+    "type": "credit",
+    "date": "2026-05-10",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A006",
+    "description": "Deliveroo Order",
+    "amount": -31.2,
+    "type": "debit",
+    "date": "2026-05-10",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A003",
+    "description": "Local Espresso Bar",
+    "amount": -4.29,
+    "type": "debit",
+    "date": "2026-05-13",
+    "category": "Others"
+}
+{
+    "account_id": "A003",
+    "description": "Council Tax",
+    "amount": -145.0,
+    "type": "debit",
+    "date": "2026-05-15",
+    "category": "Tax"
+}
+{
+    "account_id": "A006",
+    "description": "Gym Membership",
+    "amount": -35.0,
+    "type": "debit",
+    "date": "2026-05-15",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "Tesco Express",
+    "amount": -8.71,
+    "type": "debit",
+    "date": "2026-05-15",
+    "category": "Groceries"
+}
+{
+    "account_id": "A001",
+    "description": "Disney+ Monthly",
+    "amount": -10.99,
+    "type": "debit",
+    "date": "2026-05-17",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A008",
+    "description": "Vending Machine",
+    "amount": -2.56,
+    "type": "debit",
+    "date": "2026-05-17",
+    "category": "Others"
+}
+{
+    "account_id": "A001",
+    "description": "ISA Investment",
+    "amount": -150.0,
+    "type": "debit",
+    "date": "2026-05-18",
+    "category": "Others"
+}
+{
+    "account_id": "A006",
+    "description": "Deliveroo Order",
+    "amount": -26.8,
+    "type": "debit",
+    "date": "2026-05-18",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A001",
+    "description": "Electricity Bill",
+    "amount": -82.5,
+    "type": "debit",
+    "date": "2026-05-20",
+    "category": "Others"
+}
+{
+    "account_id": "A008",
+    "description": "Holiday Booking",
+    "amount": -850.0,
+    "type": "debit",
+    "date": "2026-05-22",
+    "category": "Travel"
+}
+{
+    "account_id": "A003",
+    "description": "Trainline Ticket",
+    "amount": -55.42,
+    "type": "debit",
+    "date": "2026-05-24",
+    "category": "Travel"
+}
+{
+    "account_id": "A005",
+    "description": "Gym Membership",
+    "amount": -35.0,
+    "type": "debit",
+    "date": "2026-05-25",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A003",
+    "description": "Amazon Prime Video",
+    "amount": -8.99,
+    "type": "debit",
+    "date": "2026-05-26",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A001",
+    "description": "Streaming Service",
+    "amount": -17.99,
+    "type": "debit",
+    "date": "2026-05-28",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A008",
+    "description": "Trainline Ticket",
+    "amount": -35.72,
+    "type": "debit",
+    "date": "2026-05-28",
+    "category": "Travel"
+}
+{
+    "account_id": "A008",
+    "description": "ASOS Fashion",
+    "amount": -40.4,
+    "type": "debit",
+    "date": "2026-05-29",
+    "category": "Others"
+}
+{
+    "account_id": "A003",
+    "description": "Online Retailer",
+    "amount": -32.99,
+    "type": "debit",
+    "date": "2026-05-30",
+    "category": "Others"
+}
+{
+    "account_id": "A003",
+    "description": "Uber Trip",
+    "amount": -13.15,
+    "type": "debit",
+    "date": "2026-05-30",
+    "category": "Travel"
+}
+{
+    "account_id": "A006",
+    "description": "Vending Machine",
+    "amount": -1.21,
+    "type": "debit",
+    "date": "2026-05-30",
+    "category": "Others"
+}
+{
+    "account_id": "A001",
+    "description": "Salary - Acme Corp",
+    "amount": 3200.0,
+    "type": "credit",
+    "date": "2026-06-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A002",
+    "description": "Interest Payment",
+    "amount": 24.5,
+    "type": "credit",
+    "date": "2026-06-01",
+    "category": "Interest"
+}
+{
+    "account_id": "A003",
+    "description": "Payroll - City Council",
+    "amount": 2800.0,
+    "type": "credit",
+    "date": "2026-06-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A005",
+    "description": "Rent",
+    "amount": -950.0,
+    "type": "debit",
+    "date": "2026-06-01",
+    "category": "Rent"
+}
+{
+    "account_id": "A006",
+    "description": "Pension",
+    "amount": 1200.0,
+    "type": "credit",
+    "date": "2026-06-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A006",
+    "description": "Deliveroo Plus",
+    "amount": -11.99,
+    "type": "debit",
+    "date": "2026-06-01",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A008",
+    "description": "Salary - EDB Corp",
+    "amount": 4500.0,
+    "type": "credit",
+    "date": "2026-06-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A009",
+    "description": "ISA Transfer",
+    "amount": 500.0,
+    "type": "credit",
+    "date": "2026-06-01",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A006",
+    "description": "Disney+",
+    "amount": -10.99,
+    "type": "debit",
+    "date": "2026-06-02",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A008",
+    "description": "ISA Investment",
+    "amount": -150.0,
+    "type": "debit",
+    "date": "2026-06-02",
+    "category": "Others"
+}
+{
+    "account_id": "A003",
+    "description": "ASOS Fashion",
+    "amount": -45.06,
+    "type": "debit",
+    "date": "2026-06-03",
+    "category": "Others"
+}
+{
+    "account_id": "A006",
+    "description": "Netflix",
+    "amount": -15.99,
+    "type": "debit",
+    "date": "2026-06-03",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "Spotify Premium",
+    "amount": -10.99,
+    "type": "debit",
+    "date": "2026-06-03",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A008",
+    "description": "Mortgage Payment",
+    "amount": -1200.0,
+    "type": "debit",
+    "date": "2026-06-03",
+    "category": "Rent"
+}
+{
+    "account_id": "A003",
+    "description": "Netflix Premium",
+    "amount": -17.99,
+    "type": "debit",
+    "date": "2026-06-04",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "Amazon Prime",
+    "amount": -8.99,
+    "type": "debit",
+    "date": "2026-06-04",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A003",
+    "description": "Co-op Food",
+    "amount": -12.68,
+    "type": "debit",
+    "date": "2026-06-05",
+    "category": "Groceries"
+}
+{
+    "account_id": "A006",
+    "description": "Deliveroo Order",
+    "amount": -33.5,
+    "type": "debit",
+    "date": "2026-06-08",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "Aldi Grocery",
+    "amount": -43.89,
+    "type": "debit",
+    "date": "2026-06-08",
+    "category": "Groceries"
+}
+{
+    "account_id": "A006",
+    "description": "Supermarket",
+    "amount": -67.3,
+    "type": "debit",
+    "date": "2026-06-09",
+    "category": "Groceries"
+}
+{
+    "account_id": "A006",
+    "description": "Pret A Manger",
+    "amount": -7.94,
+    "type": "debit",
+    "date": "2026-06-09",
+    "category": "Others"
+}
+{
+    "account_id": "A001",
+    "description": "Tesco Express",
+    "amount": -17.56,
+    "type": "debit",
+    "date": "2026-06-10",
+    "category": "Groceries"
+}
+{
+    "account_id": "A005",
+    "description": "Freelance Invoice",
+    "amount": 1500.0,
+    "type": "credit",
+    "date": "2026-06-10",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A006",
+    "description": "ISA Investment",
+    "amount": -150.0,
+    "type": "debit",
+    "date": "2026-06-10",
+    "category": "Others"
+}
+{
+    "account_id": "A008",
+    "description": "Amazon Retail",
+    "amount": -62.45,
+    "type": "debit",
+    "date": "2026-06-10",
+    "category": "Others"
+}
+{
+    "account_id": "A005",
+    "description": "Amazon Retail",
+    "amount": -17.06,
+    "type": "debit",
+    "date": "2026-06-11",
+    "category": "Others"
+}
+{
+    "account_id": "A006",
+    "description": "H&M",
+    "amount": -37.61,
+    "type": "debit",
+    "date": "2026-06-11",
+    "category": "Others"
+}
+{
+    "account_id": "A001",
+    "description": "Supermarket",
+    "amount": -45.8,
+    "type": "debit",
+    "date": "2026-06-12",
+    "category": "Groceries"
+}
+{
+    "account_id": "A003",
+    "description": "Coffee Shop",
+    "amount": -4.75,
+    "type": "debit",
+    "date": "2026-06-13",
+    "category": "Others"
+}
+{
+    "account_id": "A001",
+    "description": "TfL Oyster",
+    "amount": -35.0,
+    "type": "debit",
+    "date": "2026-06-15",
+    "category": "Travel"
+}
+{
+    "account_id": "A001",
+    "description": "Netflix Premium",
+    "amount": -17.99,
+    "type": "debit",
+    "date": "2026-06-15",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A005",
+    "description": "Uber Trip",
+    "amount": -11.58,
+    "type": "debit",
+    "date": "2026-06-15",
+    "category": "Travel"
+}
+{
+    "account_id": "A006",
+    "description": "Deliveroo Order",
+    "amount": -28.7,
+    "type": "debit",
+    "date": "2026-06-15",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A006",
+    "description": "Gym Membership",
+    "amount": -35.0,
+    "type": "debit",
+    "date": "2026-06-15",
+    "category": "Subscriptions"
+}
+{
+    "account_id": "A008",
+    "description": "Starbucks Coffee",
+    "amount": -4.34,
+    "type": "debit",
+    "date": "2026-06-16",
+    "category": "Others"
+}
+{
+    "account_id": "A006",
+    "description": "Stagecoach Bus Pass",
+    "amount": -13.54,
+    "type": "debit",
+    "date": "2026-06-18",
+    "category": "Travel"
+}
+{
+    "account_id": "A008",
+    "description": "Petrol",
+    "amount": -55.0,
+    "type": "debit",
+    "date": "2026-06-18",
+    "category": "Travel"
+}
+{
+    "account_id": "A008",
+    "description": "Freelance Design Work",
+    "amount": 332.23,
+    "type": "credit",
+    "date": "2026-06-18",
+    "category": "Incoming Salary"
+}
+{
+    "account_id": "A005",
+    "description": "Pret A Manger",
+    "amount": -9.09,
+    "type": "debit",
+    "date": "2026-06-19",
+    "category": "Others"
+}
+{
+    "account_id": "A006",
+    "description": "Parking Meter",
+    "amount": -3.22,
+    "type": "debit",
+    "date": "2026-06-20",
+    "category": "Others"
+}
+{
+    "account_id": "A001",
+    "description": "Newspaper Kiosk",
+    "amount": -2.14,
+    "type": "debit",
+    "date": "2026-06-21",
+    "category": "Others"
+}
+{
+    "account_id": "A008",
+    "description": "Aldi Grocery",
+    "amount": -33.18,
+    "type": "debit",
+    "date": "2026-06-22",
+    "category": "Groceries"
+}
+{
+    "account_id": "A003",
+    "description": "Tesco Express",
+    "amount": -19.52,
+    "type": "debit",
+    "date": "2026-06-23",
+    "category": "Groceries"
+}
+{
+    "account_id": "A005",
+    "description": "eBay Purchase",
+    "amount": -25.05,
+    "type": "debit",
+    "date": "2026-06-23",
+    "category": "Others"
+}
+{
+    "account_id": "A006",
+    "description": "Trainline Ticket",
+    "amount": -52.85,
+    "type": "debit",
+    "date": "2026-06-23",
+    "category": "Travel"
+}
+{
+    "account_id": "A003",
+    "description": "Trainline Ticket",
+    "amount": -46.54,
+    "type": "debit",
+    "date": "2026-06-24",
+    "category": "Travel"
+}
