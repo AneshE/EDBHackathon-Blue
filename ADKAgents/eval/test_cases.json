@@ -20,7 +20,7 @@
   {
     "name": "c001_quarterly_overview",
     "query": "Give me a quarterly spending overview for customer C001",
-    "expected_keywords": ["quarterly", "TOTAL SPENDING"],
+    "expected_keywords": ["quarterly", "Total Spending"],
     "description": "Should produce a quarterly breakdown across all categories."
   },
   {
@@ -32,7 +32,7 @@
   {
     "name": "c003_half_yearly",
     "query": "What does C003's half yearly spending look like?",
-    "expected_keywords": ["half_yearly", "TOTAL SPENDING", "Tax"],
+    "expected_keywords": ["half_yearly", "Total Spending", "Tax"],
     "description": "Should produce a 6-month breakdown for C003."
   },
   {

@@ -70,7 +70,7 @@ class TestAnalyseSpending:
         assert "Travel" in result
         assert "Rent" in result
         assert "Others" in result
-        assert "TOTAL SPENDING" in result
+        assert "Total Spending" in result
 
     @patch("bank_agent.shared_tools.spending_analysis_tools.BQ_DATASET", "test_dataset")
     @patch("bank_agent.shared_tools.spending_analysis_tools.bq_client")
@@ -81,7 +81,7 @@ class TestAnalyseSpending:
 
         result = analyse_spending(customer_id="C001", interval="monthly")
 
-        assert "TOTAL INCOME" in result
+        assert "Total Income" in result
         assert "£3,200.00" in result
 
     @patch("bank_agent.shared_tools.spending_analysis_tools.BQ_DATASET", "test_dataset")
