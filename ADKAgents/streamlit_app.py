@@ -15,10 +15,12 @@ Usage:
 """
 
 import os
+import re
 import json
 import datetime
 import requests
 import streamlit as st
+import streamlit.components.v1 as st_components
 import plotly.graph_objects as go
 import plotly.express as px
 
@@ -408,6 +410,111 @@ st.markdown(
         font-size: 0.95rem;
     }
 
+    /* ── Savings Intent Banner ─────────────────────────── */
+    @keyframes intentGlow {
+        0%   { box-shadow: 0 0 24px rgba(0,133,74,0.35), 0 0 60px rgba(0,133,74,0.1); }
+        50%  { box-shadow: 0 0 48px rgba(0,133,74,0.65), 0 0 100px rgba(6,182,212,0.2); }
+        100% { box-shadow: 0 0 24px rgba(0,133,74,0.35), 0 0 60px rgba(0,133,74,0.1); }
+    }
+    @keyframes shimmer {
+        0%   { background-position: -200% center; }
+        100% { background-position: 200% center; }
+    }
+    .intent-banner {
+        background: linear-gradient(135deg, rgba(0,133,74,0.12), rgba(6,182,212,0.08), rgba(0,133,74,0.06));
+        border: 1px solid rgba(0,133,74,0.45);
+        border-radius: 24px;
+        padding: 2.5rem 2rem;
+        text-align: center;
+        animation: intentGlow 2.8s ease-in-out infinite;
+        margin-bottom: 2rem;
+        position: relative;
+        overflow: hidden;
+    }
+    .intent-banner::before {
+        content: '';
+        position: absolute;
+        top: 0; left: -100%; right: -100%; height: 1px;
+        background: linear-gradient(90deg, transparent, rgba(0,212,116,0.6), transparent);
+        animation: shimmer 3s linear infinite;
+    }
+    .intent-eyebrow {
+        font-size: 0.75rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        color: #00854A;
+        margin-bottom: 0.75rem;
+    }
+    .intent-goal {
+        font-size: 2.6rem;
+        font-weight: 800;
+        background: linear-gradient(135deg, #00d674 0%, #06b6d4 50%, #00854A 100%);
+        background-size: 200% auto;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        animation: shimmer 4s linear infinite;
+        letter-spacing: -0.03em;
+        line-height: 1.2;
+        margin-bottom: 0.75rem;
+    }
+    .intent-sub {
+        font-size: 1rem;
+        color: #94a3b8;
+        font-weight: 400;
+    }
+    .intent-savings-pill {
+        display: inline-block;
+        background: linear-gradient(135deg, rgba(0,133,74,0.2), rgba(0,168,90,0.1));
+        border: 1px solid rgba(0,133,74,0.35);
+        border-radius: 999px;
+        padding: 0.4rem 1.2rem;
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #00d674;
+        margin-top: 1rem;
+    }
+
+    /* ── Chat bubbles ──────────────────────────────────── */
+    .chat-user {
+        background: linear-gradient(135deg, rgba(0,133,74,0.15), rgba(0,168,90,0.08));
+        border: 1px solid rgba(0,133,74,0.25);
+        border-radius: 18px 18px 4px 18px;
+        padding: 0.75rem 1.1rem;
+        margin: 0.5rem 0 0.5rem 15%;
+        color: #e2e8f0;
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+    .chat-assistant {
+        background: rgba(255,255,255,0.04);
+        border: 1px solid rgba(255,255,255,0.08);
+        border-radius: 18px 18px 18px 4px;
+        padding: 0.75rem 1.1rem;
+        margin: 0.5rem 15% 0.5rem 0;
+        color: #e2e8f0;
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+    .chat-label { font-size:0.7rem; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:0.25rem; color:#64748b; }
+    .chat-label-you { color: #00a85a; }
+
+    /* ── Query context banner ───────────────────────────── */
+    .query-context {
+        background: linear-gradient(135deg, rgba(6,182,212,0.08), rgba(6,182,212,0.03));
+        border: 1px solid rgba(6,182,212,0.25);
+        border-radius: 14px;
+        padding: 0.85rem 1.25rem;
+        margin-bottom: 1.5rem;
+        display: flex;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+    .query-context-icon { font-size:1.3rem; flex-shrink:0; margin-top:0.1rem; }
+    .query-context-label { font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:#06b6d4; margin-bottom:0.2rem; }
+    .query-context-text { font-size:0.92rem; color:#e2e8f0; line-height:1.5; }
+
     /* ── Divider ────────────────────────────────────────── */
     .custom-divider {
         height: 1px;
@@ -428,12 +535,26 @@ if "verified" not in st.session_state:
     st.session_state.verified = False
 if "customer_id" not in st.session_state:
     st.session_state.customer_id = ""
+if "full_name" not in st.session_state:
+    st.session_state.full_name = ""
 if "advisor_data" not in st.session_state:
     st.session_state.advisor_data = None
 if "perk_choice" not in st.session_state:
     st.session_state.perk_choice = None
 if "demo_mode" not in st.session_state:
     st.session_state.demo_mode = False
+if "user_query" not in st.session_state:
+    st.session_state.user_query = ""
+if "chat_messages" not in st.session_state:
+    st.session_state.chat_messages = []
+if "chat_session_id" not in st.session_state:
+    st.session_state.chat_session_id = ""
+if "chat_suggested_step" not in st.session_state:
+    st.session_state.chat_suggested_step = None
+if "savings_intent" not in st.session_state:
+    st.session_state.savings_intent = ""
+if "savings_goal" not in st.session_state:
+    st.session_state.savings_goal = None  # {amount, period_months, monthly_target, query}
 
 
 # ── Helper Functions ──────────────────────────────────────────────────────
@@ -487,6 +608,28 @@ def call_verify(customer_id: str, name: str, dob: str) -> dict:
         }
 
 
+def call_chat(customer_id: str, message: str, session_id: str, history: list) -> dict:
+    """Send a conversational message to the agent, including full history for context."""
+    try:
+        resp = requests.post(
+            f"{API_BASE_URL}/api/chat",
+            json={
+                "customer_id": customer_id,
+                "message": message,
+                "session_id": session_id,
+                "history": history,
+            },
+            timeout=60,
+        )
+        return resp.json()
+    except requests.exceptions.ConnectionError:
+        return {
+            "message": "I'm having trouble connecting to the server right now. Try the quick options above.",
+            "suggested_step": None,
+            "session_id": session_id,
+        }
+
+
 def call_advisor(customer_id: str, name: str, dob: str) -> dict:
     """Call the /api/advisor endpoint or fall back to demo data."""
     try:
@@ -503,6 +646,129 @@ def call_advisor(customer_id: str, name: str, dob: str) -> dict:
     except (requests.exceptions.ConnectionError, requests.exceptions.Timeout):
         st.session_state.demo_mode = True
         return DEMO_DATA
+
+
+_GOAL_KEYWORDS = {
+    "holiday": ("🌍", "Fund Your Dream Holiday"),
+    "vacation": ("✈️", "Fund Your Dream Vacation"),
+    "house": ("🏠", "Save for Your First Home"),
+    "home": ("🏠", "Save for Your Dream Home"),
+    "car": ("🚗", "Save for a New Car"),
+    "wedding": ("💍", "Save for Your Perfect Wedding"),
+    "emergency": ("🛡️", "Build Your Emergency Fund"),
+    "retirement": ("🌅", "Grow Your Retirement Pot"),
+    "education": ("🎓", "Invest in Your Education"),
+    "invest": ("📈", "Grow Your Investment Portfolio"),
+    "savings": ("💰", "Maximise Your Savings"),
+    "wealth": ("💎", "Build Long-Term Wealth"),
+}
+
+
+_MONTH_MAP = {
+    "jan": 1, "january": 1, "feb": 2, "february": 2, "mar": 3, "march": 3,
+    "apr": 4, "april": 4, "may": 5, "jun": 6, "june": 6, "jul": 7, "july": 7,
+    "aug": 8, "august": 8, "sep": 9, "sept": 9, "september": 9,
+    "oct": 10, "october": 10, "nov": 11, "november": 11, "dec": 12, "december": 12,
+}
+_MONTH_PATTERN = "|".join(sorted(_MONTH_MAP, key=len, reverse=True))
+
+
+def _months_until(target_month: int) -> int:
+    today = datetime.date.today()
+    diff = (target_month - today.month) % 12
+    return max(1, diff)
+
+
+def parse_savings_goal(text: str) -> dict | None:
+    """Extract savings intent from natural language.
+
+    Amount is optional — 'save by December' is valid (amount=None).
+    Handles month names, abbreviations, and numeric periods.
+    """
+    save_trigger = re.search(
+        r'\b(save|saving|put away|set aside|target|accumulate|how much can i save|how much will i save)\b',
+        text, re.IGNORECASE,
+    )
+    if not save_trigger:
+        return None
+
+    # Period detection: try month name first, then numeric period
+    period_months = None
+    period_label = None
+
+    by_month = re.search(
+        r'\bby\s+(?:end\s+of\s+|the\s+end\s+of\s+|next\s+)?(' + _MONTH_PATTERN + r')(?:\s+\d{4})?\b',
+        text, re.IGNORECASE,
+    )
+    if by_month:
+        m_name = by_month.group(1).lower()
+        target = _MONTH_MAP[m_name]
+        period_months = _months_until(target)
+        period_label = by_month.group(1).capitalize()
+    else:
+        period_match = re.search(r'(\d+)\s*(month|week|year)s?', text, re.IGNORECASE)
+        if period_match:
+            n = int(period_match.group(1))
+            unit = period_match.group(2).lower()
+            if unit == "week":
+                period_months = max(1, round(n / 4.33))
+                period_label = f"{n} weeks"
+            elif unit == "year":
+                period_months = n * 12
+                period_label = f"{n} year{'s' if n != 1 else ''}"
+            else:
+                period_months = n
+                period_label = f"{n} month{'s' if n != 1 else ''}"
+
+    # Need at least a period to be meaningful
+    if period_months is None:
+        return None
+
+    # Amount is optional
+    amount_match = re.search(r'[£$]\s*(\d[\d,]*(?:\.\d+)?)', text, re.IGNORECASE)
+    amount = float(amount_match.group(1).replace(",", "")) if amount_match else None
+    monthly_target = round(amount / period_months, 2) if amount else None
+
+    return {
+        "amount": amount,
+        "period_months": period_months,
+        "period_label": period_label,
+        "monthly_target": monthly_target,
+        "query": text,
+    }
+
+
+_PAGE_KEYWORDS = {
+    "perk": ["perk", "subscription", "benefit", "club", "product", "recommend", "saving"],
+    "wealth": ["wealth", "saving", "invest", "forecast", "growth", "goal", "plan", "future"],
+}
+
+
+def get_relevant_user_query(page: str) -> str:
+    """Return the most recent user message relevant to the given page, or empty string."""
+    keywords = _PAGE_KEYWORDS.get(page, [])
+    for msg in reversed(st.session_state.chat_messages):
+        if msg["role"] == "user":
+            text = msg["content"].lower()
+            if any(kw in text for kw in keywords):
+                return msg["content"]
+    # Fall back to any user message
+    for msg in reversed(st.session_state.chat_messages):
+        if msg["role"] == "user":
+            return msg["content"]
+    return ""
+
+
+def extract_savings_intent() -> tuple[str, str]:
+    """Return (emoji, label) for the customer's savings goal from their chat history."""
+    all_text = " ".join(
+        msg["content"] for msg in st.session_state.chat_messages if msg["role"] == "user"
+    ) + " " + st.session_state.user_query
+    all_text = all_text.lower()
+    for keyword, (emoji, label) in _GOAL_KEYWORDS.items():
+        if keyword in all_text:
+            return emoji, label
+    return "💰", "Grow Your Wealth"
 
 
 def get_step_data(step_id: str) -> dict | None:
@@ -529,7 +795,6 @@ st.markdown(
 
 # ── Stepper ───────────────────────────────────────────────────────────────
 
-render_stepper(st.session_state.current_step)
 
 # ── Demo Mode Banner ─────────────────────────────────────────────────────
 
@@ -559,8 +824,6 @@ if st.session_state.current_step == 0:
         unsafe_allow_html=True,
     )
 
-    st.markdown('<div class="glass-card">', unsafe_allow_html=True)
-
     col1, col2 = st.columns(2)
     with col1:
         customer_id = st.text_input(
@@ -582,8 +845,6 @@ if st.session_state.current_step == 0:
             max_value=datetime.date.today(),
         )
 
-    st.markdown("</div>", unsafe_allow_html=True)
-
     _, center, _ = st.columns([1, 1, 1])
     with center:
         if st.button("🔒 Verify Identity", use_container_width=True, key="btn_verify"):
@@ -597,14 +858,14 @@ if st.session_state.current_step == 0:
                 if result.get("status") == "verified":
                     st.session_state.verified = True
                     st.session_state.customer_id = customer_id
+                    st.session_state.full_name = full_name
 
-                    # Now fetch advisor data
-                    with st.spinner("Analysing your financial data..."):
+                    # Pre-load advisor data while user decides what they want
+                    with st.spinner("Verifying identity..."):
                         st.session_state.advisor_data = call_advisor(
                             customer_id, full_name, dob_str
                         )
 
-                    st.success(f"✅ {result.get('message', 'Identity verified!')}")
                     st.session_state.current_step = 1
                     st.rerun()
                 else:
@@ -612,10 +873,136 @@ if st.session_state.current_step == 0:
 
 
 # ══════════════════════════════════════════════════════════════════════════
-# STEP 2 — BUDGET BLUEPRINT
+# STEP 1 — HOW CAN WE HELP? (chat interface)
 # ══════════════════════════════════════════════════════════════════════════
 
 elif st.session_state.current_step == 1:
+    first_name = st.session_state.full_name.split()[0] if st.session_state.full_name else "there"
+
+    st.markdown(
+        f"""
+        <div class="brand-header" style="margin-top:1rem;margin-bottom:1.5rem;">
+            <h1 style="font-size:1.9rem;">👋 Welcome, {first_name}!</h1>
+            <p style="font-size:1rem;color:#94a3b8;">Identity verified. Ask me anything about your finances.</p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    # Quick-navigate buttons (explicit intent — go straight to that page)
+    q_col1, q_col2 = st.columns(2)
+    with q_col1:
+        if st.button("📊 My Budget", use_container_width=True, key="q_spending"):
+            st.session_state.current_step = 2
+            st.rerun()
+    with q_col2:
+        if st.button("🎁 Available Perks", use_container_width=True, key="q_perks"):
+            st.session_state.current_step = 3
+            st.rerun()
+
+    st.markdown('<div class="custom-divider"></div>', unsafe_allow_html=True)
+
+    # Seed greeting if chat is empty
+    if not st.session_state.chat_messages:
+        st.session_state.chat_messages = [
+            {
+                "role": "assistant",
+                "content": f"Hi {first_name}! I'm your financial advisor. You can ask me about your spending habits, available perks and benefits, or how to grow your savings. What would you like to know?",
+            }
+        ]
+
+    # Chat messages — plain rendering, no scroll container
+    for msg in st.session_state.chat_messages:
+        if msg["role"] == "user":
+            st.markdown(
+                f'<div class="chat-label chat-label-you">You</div>'
+                f'<div class="chat-user">{msg["content"]}</div>',
+                unsafe_allow_html=True,
+            )
+        else:
+            st.markdown(
+                f'<div class="chat-label">Assistant</div>'
+                f'<div class="chat-assistant">{msg["content"]}</div>',
+                unsafe_allow_html=True,
+            )
+
+    # Chat input
+    with st.form(key="chat_form", clear_on_submit=True):
+        chat_col, send_col = st.columns([5, 1])
+        with chat_col:
+            user_input = st.text_input(
+                "Message",
+                placeholder="Ask me anything about your finances...",
+                label_visibility="collapsed",
+                key="chat_input",
+            )
+        with send_col:
+            send = st.form_submit_button("Send", use_container_width=True)
+
+    if send and user_input.strip():
+        q = user_input.strip()
+        q_lower = q.lower()
+
+        # 1. Check for specific savings goal (e.g. "save £600 in 2 months") → Perk page
+        _goal = parse_savings_goal(q)
+        if _goal:
+            st.session_state.savings_goal = _goal
+            st.session_state.chat_messages.append({"role": "user", "content": q})
+            st.session_state.current_step = 3
+            st.rerun()
+
+        # 2. Navigate only on explicit page requests — general questions stay in chat
+        _nav_phrases = {
+            "budget_blueprint": [
+                "show my budget", "show budget", "my budget", "budget breakdown",
+                "budget blueprint", "open budget", "go to budget", "budget page",
+                "show spending breakdown", "spending breakdown",
+            ],
+            "perk_optimization": [
+                "show perks", "show my perks", "available perks", "perk optimization",
+                "perk optimisation", "club perks", "open perks", "go to perks",
+                "show benefits", "my perks",
+            ],
+            "wealth_growth_plan": [
+                "wealth plan", "growth plan", "show wealth plan", "wealth forecast",
+                "growth forecast", "show wealth", "open wealth", "go to wealth",
+            ],
+        }
+        _step_to_index = {"budget_blueprint": 2, "perk_optimization": 3, "wealth_growth_plan": 4}
+
+        direct_nav = None
+        for step_key, phrases in _nav_phrases.items():
+            if any(phrase in q_lower for phrase in phrases):
+                direct_nav = step_key
+                break
+
+        if direct_nav:
+            # Navigate straight to the page without an LLM call
+            st.session_state.chat_messages.append({"role": "user", "content": q})
+            st.session_state.current_step = _step_to_index[direct_nav]
+            st.rerun()
+        else:
+            # General question — answer in chat
+            st.session_state.chat_messages.append({"role": "user", "content": q})
+            with st.spinner("Thinking..."):
+                result = call_chat(
+                    st.session_state.customer_id,
+                    q,
+                    st.session_state.chat_session_id,
+                    st.session_state.chat_messages,
+                )
+            agent_reply = result.get("message", "Sorry, I couldn't process that.")
+            st.session_state.chat_session_id = result.get("session_id", st.session_state.chat_session_id)
+            st.session_state.chat_messages.append({"role": "assistant", "content": agent_reply})
+            st.session_state.chat_suggested_step = None
+            st.rerun()
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# STEP 2 — BUDGET BLUEPRINT
+# ══════════════════════════════════════════════════════════════════════════
+
+elif st.session_state.current_step == 2:
     blueprint = get_step_data("budget_blueprint")
     if not blueprint:
         blueprint = DEMO_DATA["ui_steps"][0]
@@ -816,8 +1203,8 @@ elif st.session_state.current_step == 1:
 
     _, center, _ = st.columns([1, 1, 1])
     with center:
-        if st.button("Continue to Perk Optimization →", use_container_width=True, key="btn_step2"):
-            st.session_state.current_step = 2
+        if st.button("← Back to Chat", use_container_width=True, key="btn_step2"):
+            st.session_state.current_step = 1
             st.rerun()
 
 
@@ -825,7 +1212,7 @@ elif st.session_state.current_step == 1:
 # STEP 3 — PERK OPTIMIZATION
 # ══════════════════════════════════════════════════════════════════════════
 
-elif st.session_state.current_step == 2:
+elif st.session_state.current_step == 3:
     perk = get_step_data("perk_optimization")
     if not perk:
         perk = DEMO_DATA["ui_steps"][1]
@@ -835,6 +1222,59 @@ elif st.session_state.current_step == 2:
         f'<div class="section-subtitle">Smart actions to optimise your spending</div>',
         unsafe_allow_html=True,
     )
+
+    # ── Query Context Banner ──
+    _perk_query = get_relevant_user_query("perk")
+    if _perk_query:
+        st.markdown(
+            f"""
+            <div class="query-context">
+                <div class="query-context-icon">💬</div>
+                <div>
+                    <div class="query-context-label">Based on your query</div>
+                    <div class="query-context-text">"{_perk_query}"</div>
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
+    # ── Savings Goal Banner (if customer stated a specific goal) ──
+    _goal = st.session_state.savings_goal
+    if _goal:
+        _period_label = _goal.get("period_label", "your target period")
+        _perk_monthly_contrib = perk.get("monthly_savings", 0)
+
+        if _goal.get("amount"):
+            _total = _goal["amount"]
+            _monthly = _goal["monthly_target"]
+            _perk_pct = min(100, round((_perk_monthly_contrib / _monthly) * 100)) if _monthly else 0
+            _remaining = max(0, _monthly - _perk_monthly_contrib)
+            _goal_line = f"🎯 Save £{_total:,.2f} by {_period_label}"
+            _sub_line = f"Monthly target: <strong style='color:#00d674;'>£{_monthly:,.2f}/month</strong>"
+            _pills = (
+                f'<div class="intent-savings-pill">✂️ Perk savings: £{_perk_monthly_contrib:,.2f}/mo ({_perk_pct}%)</div>'
+                f'<div class="intent-savings-pill" style="border-color:rgba(6,182,212,0.35);color:#06b6d4;">'
+                f'🎯 Still needed: £{_remaining:,.2f}/mo</div>'
+            )
+        else:
+            _goal_line = f"🎯 Save as much as possible by {_period_label}"
+            _sub_line = f"Perk savings of <strong style='color:#00d674;'>£{_perk_monthly_contrib:,.2f}/month</strong> are a great start"
+            _pills = f'<div class="intent-savings-pill">✂️ Potential monthly saving: £{_perk_monthly_contrib:,.2f}</div>'
+
+        st.markdown(
+            f"""
+            <div class="intent-banner" style="margin-bottom:1.5rem;">
+                <div class="intent-eyebrow">Your Savings Goal</div>
+                <div class="intent-goal">{_goal_line}</div>
+                <div class="intent-sub">{_sub_line}</div>
+                <div style="margin-top:1.25rem;display:flex;justify-content:center;gap:1.5rem;flex-wrap:wrap;">
+                    {_pills}
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
 
     # ── Leak Detection Alert ──
     st.markdown(
@@ -905,15 +1345,15 @@ elif st.session_state.current_step == 2:
 
     st.markdown('<div class="custom-divider"></div>', unsafe_allow_html=True)
 
-    col_back, col_spacer, col_next = st.columns([1, 1, 1])
+    col_back, col_next = st.columns(2)
     with col_back:
-        if st.button("← Back to Blueprint", use_container_width=True, key="btn_back_step2"):
+        if st.button("← Back to Chat", use_container_width=True, key="btn_back_step2"):
             st.session_state.current_step = 1
             st.rerun()
     with col_next:
-        if st.button("Continue to Growth Plan →", use_container_width=True, key="btn_step3"):
+        if st.button("View Wealth Plan →", use_container_width=True, key="btn_to_wealth"):
             st.session_state.perk_choice = choice
-            st.session_state.current_step = 3
+            st.session_state.current_step = 4
             st.rerun()
 
 
@@ -921,7 +1361,7 @@ elif st.session_state.current_step == 2:
 # STEP 4 — WEALTH GROWTH PLAN
 # ══════════════════════════════════════════════════════════════════════════
 
-elif st.session_state.current_step == 3:
+elif st.session_state.current_step == 4:
     growth = get_step_data("wealth_growth_plan")
     if not growth:
         growth = DEMO_DATA["ui_steps"][2]
@@ -929,6 +1369,32 @@ elif st.session_state.current_step == 3:
     st.markdown(
         f'<div class="section-title">{growth["title"]}</div>'
         f'<div class="section-subtitle">Your personalised wealth building roadmap</div>',
+        unsafe_allow_html=True,
+    )
+
+    # ── Savings Intent Hero ──
+    _intent_emoji, _intent_label = extract_savings_intent()
+    _perk_data = get_step_data("perk_optimization")
+    _perk_monthly = _perk_data.get("monthly_savings", 0) if _perk_data else 0
+    _optimized = st.session_state.perk_choice and "Yes" in str(st.session_state.perk_choice)
+    _monthly_target = growth.get("monthly_savings_target", 644.90)
+    _effective_monthly = _monthly_target + (_perk_monthly if _optimized else 0)
+    _annual_total = _effective_monthly * 12
+
+    _pill_text = (
+        f"£{_effective_monthly:,.2f}/mo · £{_annual_total:,.2f} by year-end"
+        + (" · Perk savings applied ✓" if _optimized else "")
+    )
+
+    st.markdown(
+        f"""
+        <div class="intent-banner">
+            <div class="intent-eyebrow">Your Savings Goal</div>
+            <div class="intent-goal">{_intent_emoji} {_intent_label}</div>
+            <div class="intent-sub">Here's exactly how we'll get you there</div>
+            <div class="intent-savings-pill">{_pill_text}</div>
+        </div>
+        """,
         unsafe_allow_html=True,
     )
 
@@ -1066,7 +1532,7 @@ elif st.session_state.current_step == 3:
     st.markdown(
         f"""
         <div class="glass-card animate-in">
-            <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1rem;">
+            <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0.75rem;">
                 <span style="font-size:2rem;">🚀</span>
                 <div>
                     <div style="font-size:1.1rem;font-weight:700;color:#e2e8f0;">Long-Term Wealth Building</div>
@@ -1080,6 +1546,108 @@ elif st.session_state.current_step == 3:
         """,
         unsafe_allow_html=True,
     )
+
+    # ── Long-Term Compound Growth Chart ──
+    _lt_monthly = monthly_target + (perk_monthly if optimized else 0)
+    _years = list(range(0, 31))
+
+    def _compound_value(monthly: float, annual_rate: float, years: int) -> float:
+        if annual_rate == 0:
+            return monthly * years * 12
+        r = annual_rate / 12
+        n = years * 12
+        return monthly * ((1 + r) ** n - 1) / r
+
+    _conservative = [_compound_value(_lt_monthly, 0.02, y) for y in _years]
+    _moderate     = [_compound_value(_lt_monthly, 0.05, y) for y in _years]
+    _growth       = [_compound_value(_lt_monthly, 0.08, y) for y in _years]
+
+    fig_lt = go.Figure()
+
+    fig_lt.add_trace(go.Scatter(
+        x=_years, y=_conservative,
+        mode="lines", name="Conservative (2%)",
+        line=dict(color="#94a3b8", width=2, dash="dot"),
+        fill="tozeroy", fillcolor="rgba(148,163,184,0.04)",
+    ))
+    fig_lt.add_trace(go.Scatter(
+        x=_years, y=_moderate,
+        mode="lines", name="Balanced (5%)",
+        line=dict(color="#00854A", width=3, shape="spline"),
+        fill="tozeroy", fillcolor="rgba(0,133,74,0.07)",
+    ))
+    fig_lt.add_trace(go.Scatter(
+        x=_years, y=_growth,
+        mode="lines", name="Growth (8%)",
+        line=dict(color="#f59e0b", width=2.5, shape="spline"),
+        fill="tozeroy", fillcolor="rgba(245,158,11,0.05)",
+    ))
+
+    # Milestone annotations at 10 and 20 years
+    for _yr, _color in [(10, "#00854A"), (20, "#f59e0b")]:
+        fig_lt.add_vline(
+            x=_yr,
+            line_width=1,
+            line_dash="dash",
+            line_color="rgba(255,255,255,0.15)",
+            annotation_text=f"Year {_yr}",
+            annotation_position="top",
+            annotation_font_color="#94a3b8",
+            annotation_font_size=11,
+        )
+
+    fig_lt.update_layout(
+        paper_bgcolor="rgba(0,0,0,0)",
+        plot_bgcolor="rgba(0,0,0,0)",
+        font=dict(color="#94a3b8", family="Inter"),
+        xaxis=dict(
+            showgrid=False,
+            title="Years",
+            tickmode="array",
+            tickvals=[0, 5, 10, 15, 20, 25, 30],
+            ticktext=["Now", "5yr", "10yr", "15yr", "20yr", "25yr", "30yr"],
+        ),
+        yaxis=dict(
+            showgrid=True,
+            gridcolor="rgba(255,255,255,0.05)",
+            title="Projected Wealth (£)",
+            tickprefix="£",
+            tickformat=",.0f",
+        ),
+        legend=dict(
+            orientation="h",
+            yanchor="bottom",
+            y=1.02,
+            xanchor="right",
+            x=1,
+            font=dict(color="#94a3b8"),
+        ),
+        margin=dict(t=40, b=50, l=70, r=20),
+        height=360,
+        hovermode="x unified",
+    )
+    st.plotly_chart(fig_lt, use_container_width=True, key="longterm_chart")
+
+    # Summary milestone metrics
+    _c10, _c20, _c30 = st.columns(3)
+    for _col, _yr, _val, _label, _color in [
+        (_c10, 10, _moderate[10], "10-Year (Balanced)", "#00854A"),
+        (_c20, 20, _moderate[20], "20-Year (Balanced)", "#06b6d4"),
+        (_c30, 30, _growth[30],   "30-Year (Growth)",   "#f59e0b"),
+    ]:
+        with _col:
+            st.markdown(
+                f"""
+                <div class="metric-card" style="text-align:center;">
+                    <div class="metric-value" style="font-size:1.3rem;background:linear-gradient(135deg,{_color},{_color}bb);
+                        -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">
+                        £{_val:,.0f}
+                    </div>
+                    <div class="metric-label">{_label}</div>
+                </div>
+                """,
+                unsafe_allow_html=True,
+            )
 
     # ── User's perk choice summary ──
     if st.session_state.perk_choice:
@@ -1117,15 +1685,10 @@ elif st.session_state.current_step == 3:
 
     st.markdown('<div class="custom-divider"></div>', unsafe_allow_html=True)
 
-    col_back, col_spacer, col_restart = st.columns([1, 1, 1])
-    with col_back:
-        if st.button("← Back to Perks", use_container_width=True, key="btn_back_step3"):
-            st.session_state.current_step = 2
-            st.rerun()
-    with col_restart:
-        if st.button("🔄 Start Over", use_container_width=True, key="btn_restart"):
-            for key in list(st.session_state.keys()):
-                del st.session_state[key]
+    _, center, _ = st.columns([1, 1, 1])
+    with center:
+        if st.button("← Back to Chat", use_container_width=True, key="btn_back_step3"):
+            st.session_state.current_step = 1
             st.rerun()
 
 
